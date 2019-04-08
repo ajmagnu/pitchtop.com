@@ -1,0 +1,2565 @@
+/* line 98, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 107, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 115, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.arrow:after, a span.arrow:after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 7px;
+  background-image: url("https://www.stripe.com/img/link_arrows/blue.png");
+  position: relative;
+  top: -1px;
+  margin: 0 0 0 6px;
+}
+
+/* line 127, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+article {
+  display: block;
+}
+
+/* line 130, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+aside {
+  display: block;
+}
+
+/* line 133, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+details {
+  display: block;
+}
+
+/* line 136, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+figcaption {
+  display: block;
+}
+
+/* line 139, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+figure {
+  display: block;
+  margin: 0;
+}
+
+/* line 143, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer {
+  display: block;
+}
+/* line 145, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  color: #b0bfc7;
+  font-size: 1.2em;
+}
+/* line 151, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer.hidden {
+  display: none;
+}
+/* line 154, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer a {
+  color: #b0bfc7;
+  cursor: pointer;
+}
+/* line 157, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer a:hover {
+  color: #678494;
+}
+/* line 161, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 165, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+  display: inline;
+}
+/* line 172, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer p {
+  display: inline;
+  float: right;
+  position: relative;
+  top: -1px;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+/* line 181, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector {
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid rgba(49, 78, 95, 0.15);
+  padding-right: 13px;
+  margin-right: 10px;
+}
+/* line 187, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector strong {
+  font-weight: 400;
+}
+/* line 190, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul {
+  display: none;
+  left: -15px;
+  text-align: left;
+  border: 0;
+  z-index: 9000;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(0, 0, 0, 0.06);
+  width: 205px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+  transform: scale(1);
+  opacity: 1;
+  filter: none;
+}
+/* line 211, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul a {
+  position: relative;
+  display: block;
+  line-height: 1em;
+  padding: 5px 15px;
+  color: #6f7c82;
+  font-weight: 500;
+}
+/* line 218, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul a em {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #c1c5ca;
+  font-size: 11px;
+  font-style: normal;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid rgba(192, 199, 205, 0.3);
+  padding: 0 2px;
+  margin-left: 2px;
+}
+/* line 232, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul a:hover {
+  color: #292e31;
+}
+/* line 235, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul a.selected {
+  padding-right: 37px;
+}
+/* line 237, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul a.selected:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 12px;
+  background-image: url("https://www.stripe.com/img/footer/check.png");
+  position: absolute;
+  right: 15px;
+  margin-top: -14px;
+}
+/* line 249, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul img {
+  vertical-align: middle;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+}
+/* line 255, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li {
+  display: block;
+  margin: 0;
+}
+/* line 259, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li.notify-signup-link:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(192, 199, 205, 0.2);
+  margin: 10px 16px;
+}
+/* line 266, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li.notify-signup-link a {
+  padding-top: 3px;
+  line-height: 1.6em;
+  color: #a8b1b5;
+}
+/* line 272, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li:first-child a {
+  padding-top: 15px;
+}
+/* line 275, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li:last-child a {
+  padding-bottom: 15px;
+}
+/* line 278, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li + li.beta:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(192, 199, 205, 0.2);
+  margin: 10px 16px;
+}
+/* line 285, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul li.beta + li.beta:before {
+  display: none;
+}
+/* line 289, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 47px;
+  height: 23px;
+  bottom: -23px;
+  left: 3px;
+  background-image: url("https://www.stripe.com/img/popover/arrow_bottom.png");
+}
+/* line 299, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector ul.hidden-animation-state {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: scale(0);
+}
+/* line 306, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector a.select {
+  font-weight: 400;
+  user-select: none;
+}
+/* line 310, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer#main-footer div.country-selector a.select img {
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 3px;
+}
+
+/* line 319, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header {
+  display: block;
+}
+/* line 321, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header {
+  position: relative;
+  z-index: 9000;
+  user-select: none;
+  font-size: 1.2em;
+}
+/* line 327, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header nav {
+  position: relative;
+}
+/* line 330, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header h1 {
+  width: 63px;
+  height: 27px;
+  overflow: hidden;
+  text-indent: 100%;
+  margin: 0 0 0 -1px;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+}
+/* line 339, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header h1 a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.stripe.com/img/navigation/logo-2.png");
+  background-repeat: no-repeat;
+}
+/* line 346, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header h1 a:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+/* line 352, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul {
+  margin: 0;
+  padding: 16px 0 0;
+}
+/* line 355, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul.pages {
+  margin-left: 73px;
+}
+/* line 358, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul.external {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+/* line 363, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul {
+  display: none;
+  top: 30px;
+  left: -4px;
+  margin: 0;
+  padding: 0;
+  z-index: 9000;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(0, 0, 0, 0.06);
+  width: 123px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+  transform-origin: 39px -10px;
+  transform: scale(1);
+  opacity: 1;
+  filter: none;
+}
+/* line 387, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul a {
+  display: block;
+  line-height: 1.45em;
+  padding: 5px 15px;
+  font-weight: 500;
+  color: #6f7c82 !important;
+}
+/* line 393, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul a:hover {
+  color: #292e31 !important;
+}
+/* line 396, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul a .new-badge {
+  top: -1px;
+  height: 15px;
+  padding: 0 3px;
+  font-size: 9px;
+  line-height: 15px;
+}
+/* line 404, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul li {
+  display: block;
+  margin: 0;
+}
+/* line 407, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul li:first-child a {
+  padding-top: 15px;
+}
+/* line 410, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul li:last-child a {
+  padding-bottom: 15px;
+}
+/* line 413, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul li.separator:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.05);
+  margin: 7.5px 15px;
+}
+/* line 421, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 37px;
+  height: 12px;
+  top: -12px;
+  left: 20px;
+  background-image: url("https://www.stripe.com/img/popover/arrow_top.png");
+}
+/* line 431, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header ul ul.hidden-animation-state {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: scale(0);
+}
+/* line 439, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  margin-right: 0;
+}
+/* line 445, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.home {
+  display: none;
+}
+/* line 448, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more {
+  position: relative;
+}
+/* line 450, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more > span {
+  color: #6f7c82;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* line 454, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more > span:hover {
+  color: #292e31;
+}
+/* line 458, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more span {
+  padding: 10px 8px;
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+}
+/* line 463, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -2px;
+  width: 7px;
+  height: 4px;
+  background-image: url("https://www.stripe.com/img/navigation/arrow.png");
+  background-repeat: no-repeat;
+}
+/* line 474, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.more span:hover:after {
+  background-position: -7px 0;
+}
+/* line 479, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li a {
+  padding: 10px 8px;
+}
+/* line 482, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.button {
+  margin-right: 0;
+  margin-left: 8px;
+}
+/* line 485, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.button a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 12px;
+  border-radius: 14px;
+  border: 1px solid #d8dee3;
+}
+/* line 493, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header li.button a:active {
+  background: rgba(216, 222, 227, 0.1);
+}
+/* line 499, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header a {
+  color: #6f7c82;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* line 503, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header a:hover {
+  color: #292e31;
+}
+/* line 506, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header a.toggle-search {
+  position: absolute;
+  overflow: hidden;
+  text-indent: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  width: 13px;
+  height: 13px;
+  background-image: url("https://www.stripe.com/img/search/magnifying_glass.png");
+}
+/* line 519, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 522, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent h1 {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  transform: translateZ(0);
+}
+/* line 526, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent h1 a {
+  background-image: url("https://www.stripe.com/img/navigation/logo-white-1.png");
+  opacity: .85;
+  filter: alpha(opacity=85);
+}
+/* line 530, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent h1 a:hover {
+  opacity: 1;
+  filter: none;
+}
+/* line 537, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent li.more span {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 539, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent li.more span:hover {
+  color: #fff;
+}
+/* line 541, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent li.more span:hover:after {
+  transform: translateZ(0);
+  opacity: 1;
+  filter: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+/* line 549, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent li.more span:after {
+  background-position: -14px 0 !important;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  transform: translateZ(0);
+}
+/* line 558, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent li.button a {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+/* line 564, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.pages ul {
+  text-shadow: none;
+}
+/* line 567, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.pages ul a:hover {
+  color: #292e31;
+}
+/* line 571, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.pages li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 573, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.pages li a:hover {
+  color: #fff;
+}
+/* line 578, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.external li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 580, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent ul.external li a:hover {
+  color: #fff;
+}
+/* line 585, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header.transparent div.inner-col {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* line 589, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+header#main-header div.inner-col {
+  height: 48px;
+  border-bottom: 1px solid rgba(49, 78, 95, 0.075);
+}
+
+/* line 595, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+hgroup {
+  display: block;
+}
+
+/* line 598, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+main {
+  display: block;
+}
+
+/* line 601, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+nav {
+  display: block;
+}
+
+/* line 604, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+section {
+  display: block;
+}
+
+/* line 607, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+summary {
+  display: block;
+}
+
+/* line 610, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+audio {
+  display: inline-block;
+}
+/* line 612, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 617, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+canvas {
+  display: inline-block;
+}
+
+/* line 620, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+video {
+  display: inline-block;
+}
+
+/* line 623, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 626, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html {
+  font-family: sans-serif;
+  background: #f8f9fb;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+/* line 633, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html input[type=button] {
+  cursor: pointer;
+}
+/* line 636, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html input[disabled] {
+  cursor: default;
+}
+/* line 640, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile .nav-animatable {
+  transition: transform 0.35s cubic-bezier(0.225, 0.5, 0.165, 1) !important;
+}
+/* line 645, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile body.is-animating {
+  pointer-events: none;
+}
+/* line 648, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile body.nav-shown {
+  overflow: hidden;
+}
+/* line 650, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile body.nav-shown .nav-animation-element {
+  pointer-events: none;
+}
+/* line 653, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile body.nav-shown header#main-header nav {
+  display: block;
+}
+/* line 659, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile header#main-header.transparent div.mobile-nav-button {
+  background-image: url("https://www.stripe.com/img/navigation/mobile/nav-white.png");
+  opacity: .68;
+  filter: alpha(opacity=68);
+}
+/* line 664, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html.mobile header#main-header div.mobile-nav-button {
+  display: none;
+  position: absolute;
+  right: -10px;
+  top: -3px;
+  bottom: 0;
+  width: 90px;
+  background-image: url("https://www.stripe.com/img/navigation/mobile/nav.png");
+  background-position: 57px 17px;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+/* line 679, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html#features header#main-header li.features a {
+  color: #b3babe;
+  cursor: default;
+}
+/* line 683, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+html#pricing header#main-header li.pricing a {
+  color: #b3babe;
+  cursor: default;
+}
+
+/* line 688, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+body {
+  margin: 0;
+  background-image: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  background-size: 100% 900px;
+  background-repeat: no-repeat;
+  font-size: 62.5%;
+  color: #6f7c82;
+  font-family: "Josefin Sans", "Josefin Sans", Helvetica, Arial;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 702, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a {
+  text-decoration: none;
+  color: #008cdd;
+}
+/* line 705, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 708, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:active {
+  outline: 0;
+}
+/* line 710, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:active strong.button {
+  background: #1272ac;
+}
+/* line 712, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:active strong.button span {
+  background: #168eda;
+}
+/* line 717, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:hover {
+  outline: 0;
+  color: #292e31;
+}
+/* line 720, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:hover span.arrow {
+  color: #292e31;
+}
+/* line 722, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a:hover span.arrow:after {
+  background-position: -5px 0;
+}
+/* line 727, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.arrow {
+  display: inline-block;
+}
+/* line 732, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.arrow:hover:after {
+  background-position: -5px 0;
+}
+/* line 736, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #6f7c82;
+  border: 1px solid #d8dee3;
+}
+/* line 745, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button span {
+  box-sizing: border-box;
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  padding: 0 14px;
+  border-radius: 5px;
+}
+/* line 756, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button:active {
+  background: rgba(216, 222, 227, 0.2);
+  outline: none;
+}
+/* line 760, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button:focus {
+  outline: none;
+}
+/* line 763, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.default {
+  padding: 1px;
+  border: 0;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background: #008cdd;
+  background: linear-gradient(#489dce, #1272ac);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 773, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.default span {
+  background: linear-gradient(#5db6e8, #168eda 85%, #168eda 90%, #168eda);
+}
+/* line 776, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.default:active {
+  background: #1272ac;
+}
+/* line 778, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.default:active span {
+  background: #168eda;
+}
+/* line 783, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.loading {
+  color: #818890;
+  text-shadow: none;
+  background: #c1c5ca;
+  box-shadow: none;
+}
+/* line 790, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a.button.loading span {
+  background: #d9dbde;
+}
+/* line 795, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+a span.arrow {
+  color: #008cdd;
+  display: inline-block;
+}
+
+/* line 803, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+  font-size: 3.2em;
+  line-height: 1.3em;
+  font-weight: 300;
+  color: #292e31;
+}
+
+/* line 811, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 814, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 817, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong {
+  font-weight: 700;
+  font-weight: 500;
+}
+/* line 820, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button {
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #6f7c82;
+  border: 1px solid #d8dee3;
+}
+/* line 829, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button span {
+  box-sizing: border-box;
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  padding: 0 14px;
+  border-radius: 5px;
+}
+/* line 840, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button:active {
+  background: rgba(216, 222, 227, 0.2);
+  outline: none;
+}
+/* line 844, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button:focus {
+  outline: none;
+}
+/* line 847, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.default {
+  padding: 1px;
+  border: 0;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background: #008cdd;
+  background: linear-gradient(#489dce, #1272ac);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 857, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.default span {
+  background: linear-gradient(#5db6e8, #168eda 85%, #168eda 90%, #168eda);
+}
+/* line 860, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.default:active {
+  background: #1272ac;
+}
+/* line 862, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.default:active span {
+  background: #168eda;
+}
+/* line 867, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.loading {
+  color: #818890;
+  text-shadow: none;
+  background: #c1c5ca;
+  box-shadow: none;
+}
+/* line 874, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+strong.button.loading span {
+  background: #d9dbde;
+}
+
+/* line 880, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 883, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 888, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 892, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+code {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* line 896, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+kbd {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* line 900, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+pre {
+  font-family: monospace;
+  font-size: 1em;
+  white-space: pre-wrap;
+}
+
+/* line 905, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* line 909, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 912, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 915, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 919, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 923, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+img {
+  border: 0;
+}
+
+/* line 926, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 931, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 935, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button {
+  line-height: normal;
+  text-transform: none;
+  cursor: pointer;
+}
+/* line 940, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button {
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #6f7c82;
+  border: 1px solid #d8dee3;
+}
+/* line 949, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button span {
+  box-sizing: border-box;
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  padding: 0 14px;
+  border-radius: 5px;
+}
+/* line 960, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button:active {
+  background: rgba(216, 222, 227, 0.2);
+  outline: none;
+}
+/* line 964, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button:focus {
+  outline: none;
+}
+/* line 967, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.default {
+  padding: 1px;
+  border: 0;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background: #008cdd;
+  background: linear-gradient(#489dce, #1272ac);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 977, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.default span {
+  background: linear-gradient(#5db6e8, #168eda 85%, #168eda 90%, #168eda);
+}
+/* line 980, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.default:active {
+  background: #1272ac;
+}
+/* line 982, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.default:active span {
+  background: #168eda;
+}
+/* line 987, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.loading {
+  color: #818890;
+  text-shadow: none;
+  background: #c1c5ca;
+  box-shadow: none;
+}
+/* line 994, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button.button.loading span {
+  background: #d9dbde;
+}
+
+/* line 1000, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input {
+  line-height: normal;
+}
+
+/* line 1004, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+select {
+  text-transform: none;
+}
+
+/* line 1008, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 1013, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input[type=reset] {
+  cursor: pointer;
+}
+
+/* line 1016, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 1019, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button[disabled] {
+  cursor: default;
+}
+
+/* line 1022, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input[type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 1027, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 1032, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input[type=search] {
+  box-sizing: content-box;
+}
+
+/* line 1040, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1044, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1048, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1052, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+/* line 1060, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+/* line 1064, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+/* line 1068, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-comment {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 1072, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 1076, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-template_comment {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 1080, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-keyword {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1084, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-request {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1088, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-status {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1092, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-subst {
+  color: #333;
+  font-weight: 700;
+  font-weight: 400;
+}
+
+/* line 1097, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-winutils {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1101, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-hexcolor {
+  color: teal;
+}
+
+/* line 1104, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-number {
+  color: teal;
+}
+
+/* line 1108, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.ruby .hljs-constant {
+  color: teal;
+}
+/* line 1111, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.ruby .hljs-symbol .hljs-string {
+  color: #990073;
+}
+
+/* line 1115, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-dartdoc {
+  color: #d14;
+}
+
+/* line 1118, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-phpdoc {
+  color: #d14;
+}
+
+/* line 1121, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-string {
+  color: #d14;
+}
+
+/* line 1124, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-tag {
+  color: navy;
+  font-weight: 400;
+}
+/* line 1127, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-tag .hljs-value {
+  color: #d14;
+}
+/* line 1130, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-tag .hljs-title {
+  color: navy;
+  font-weight: 400;
+}
+
+/* line 1136, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.tex .hljs-formula {
+  color: #d14;
+}
+/* line 1139, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.tex .hljs-command {
+  color: #458;
+  font-weight: 700;
+}
+/* line 1143, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.tex .hljs-special {
+  color: #990073;
+}
+
+/* line 1147, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-id {
+  color: #900;
+  font-weight: 700;
+}
+
+/* line 1151, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-title {
+  color: #900;
+  font-weight: 700;
+}
+
+/* line 1155, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-type {
+  color: #458;
+  font-weight: 700;
+}
+
+/* line 1159, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-attribute {
+  color: teal;
+}
+
+/* line 1162, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-variable {
+  color: teal;
+}
+
+/* line 1166, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.lisp .hljs-body {
+  color: teal;
+}
+/* line 1169, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.lisp .hljs-keyword {
+  color: #990073;
+}
+
+/* line 1173, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-regexp {
+  color: #009926;
+}
+
+/* line 1176, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-prompt {
+  color: #990073;
+}
+
+/* line 1179, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-symbol {
+  color: #990073;
+}
+
+/* line 1182, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-built_in {
+  color: #0086b3;
+}
+
+/* line 1185, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-cdata {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1189, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-doctype {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1193, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-pi {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1197, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-pragma {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1201, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-preprocessor {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1205, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-shebang {
+  color: #999;
+  font-weight: 700;
+}
+
+/* line 1209, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-deletion {
+  background: #fdd;
+}
+
+/* line 1212, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-addition {
+  background: #dfd;
+}
+
+/* line 1215, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-chunk {
+  color: #aaa;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 138dpi), all and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* line 1220, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  a.arrow:after {
+    background-image: url("https://www.stripe.com/img/link_arrows/blue@2x.png");
+    background-size: 10px 7px;
+  }
+  /* line 1224, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  a span.arrow:after {
+    background-image: url("https://www.stripe.com/img/link_arrows/blue@2x.png");
+    background-size: 10px 7px;
+  }
+
+  /* line 1230, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  header#main-header h1 a {
+    background-image: url("https://www.stripe.com/img/navigation/logo@2x-2.png");
+    background-size: 100% 100%;
+  }
+  /* line 1234, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  header#main-header li.more span:after {
+    background-image: url("https://www.stripe.com/img/navigation/arrow@2x.png");
+    background-size: 21px 4px;
+  }
+  /* line 1238, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  header#main-header ul ul:before {
+    background-image: url("https://www.stripe.com/img/popover/arrow_top@2x.png");
+    background-size: 100% 100%;
+  }
+  /* line 1242, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  header#main-header a.toggle-search {
+    background-image: url("https://www.stripe.com/img/search/magnifying_glass@2x.png");
+    background-size: 100% 100%;
+  }
+  /* line 1246, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  header#main-header.transparent h1 a {
+    background-image: url("https://www.stripe.com/img/navigation/logo-white@2x-1.png");
+    background-size: 100% 100%;
+  }
+
+  /* line 1252, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header.transparent div.mobile-nav-button {
+    background-image: url("https://www.stripe.com/img/navigation/mobile/nav-white@2x.png");
+    background-size: 23px 20px;
+  }
+  /* line 1256, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header div.mobile-nav-button {
+    background-image: url("https://www.stripe.com/img/navigation/mobile/nav@2x.png");
+    background-size: 23px 20px;
+  }
+
+  /* line 1262, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer div.country-selector ul:before {
+    background-image: url("https://www.stripe.com/img/popover/arrow_bottom@2x.png");
+    background-size: 100% 100%;
+  }
+  /* line 1266, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer div.country-selector ul a.selected:after {
+    background-image: url("https://www.stripe.com/img/footer/check@2x.png");
+    background-size: 100% 100%;
+  }
+}
+/* line 1272, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+h2 {
+  font-weight: 300;
+  color: #292e31;
+  font-size: 2.4em;
+}
+
+/* line 1277, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+h3 {
+  color: #292e31;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin-bottom: .2em;
+  font-size: 1.6em;
+}
+
+/* line 1284, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+/* line 1290, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.new-badge {
+  position: relative;
+  display: inline-block;
+  top: -2px;
+  height: 19px;
+  padding: 0 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+  background: #64bd2e;
+  background-image: linear-gradient(#64bd2e, #50a91a);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  line-height: 19px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 1309, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#main {
+  padding: 0 10px;
+}
+/* line 1312, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid {
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9000;
+  pointer-events: none;
+  width: 952px;
+  left: 50%;
+  margin-left: -476px;
+  background: rgba(255, 0, 234, 0.1);
+  box-sizing: border-box;
+}
+/* line 1326, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 0, 234, 0.1);
+  border-left: 1px solid rgba(255, 0, 234, 0.5);
+  border-right: 1px solid rgba(255, 0, 234, 0.5);
+  box-sizing: border-box;
+  width: 61px;
+}
+/* line 1336, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(1) {
+  left: 0;
+}
+/* line 1339, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(2) {
+  left: 81px;
+}
+/* line 1342, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(3) {
+  left: 162px;
+}
+/* line 1345, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(4) {
+  left: 243px;
+}
+/* line 1348, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(5) {
+  left: 324px;
+}
+/* line 1351, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(6) {
+  left: 405px;
+}
+/* line 1354, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(7) {
+  left: 486px;
+}
+/* line 1357, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(8) {
+  left: 567px;
+}
+/* line 1360, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(9) {
+  left: 648px;
+}
+/* line 1363, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(10) {
+  left: 729px;
+}
+/* line 1366, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(11) {
+  left: 810px;
+}
+/* line 1369, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+div#grid div:nth-child(12) {
+  left: 891px;
+}
+
+/* line 1375, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.block {
+  margin: 0 auto;
+  width: 952px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* line 1386, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.inner-col {
+  margin: 0 auto;
+  width: 952px;
+}
+
+/* line 1390, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+template {
+  display: none;
+}
+
+/* line 1393, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+iframe[name=google_conversion_frame] {
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  float: left;
+}
+
+@media screen and (max-width: 1012px) {
+  /* line 1402, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet h1 {
+    font-size: 2.8em;
+  }
+  /* line 1405, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet h2 {
+    font-size: 2em;
+  }
+  /* line 1408, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet h3 {
+    font-size: 1.4em;
+  }
+  /* line 1411, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet p {
+    font-size: 1.4em;
+  }
+  /* line 1414, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet .block {
+    width: 748px;
+  }
+  /* line 1417, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet .inner-col {
+    width: 748px;
+  }
+  /* line 1420, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.tablet div#main {
+    min-width: 748px;
+  }
+
+  /* line 1424, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid {
+    width: 748px;
+    margin-left: -374px;
+  }
+  /* line 1427, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div {
+    width: 37px;
+  }
+  /* line 1429, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(1) {
+    left: 41px;
+  }
+  /* line 1432, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(2) {
+    left: 98px;
+  }
+  /* line 1435, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(3) {
+    left: 155px;
+  }
+  /* line 1438, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(4) {
+    left: 212px;
+  }
+  /* line 1441, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(5) {
+    left: 269px;
+  }
+  /* line 1444, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(6) {
+    left: 326px;
+  }
+  /* line 1447, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(7) {
+    left: 383px;
+  }
+  /* line 1450, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(8) {
+    left: 440px;
+  }
+  /* line 1453, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(9) {
+    left: 497px;
+  }
+  /* line 1456, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(10) {
+    left: 554px;
+  }
+  /* line 1459, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(11) {
+    left: 611px;
+  }
+  /* line 1462, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  div#grid div:nth-child(12) {
+    left: 668px;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 1470, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile body {
+    font-size: 14px;
+  }
+  /* line 1473, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile h1 {
+    font-size: 1.6em;
+    font-weight: 500;
+  }
+  /* line 1477, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  /* line 1481, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile p {
+    font-size: 1.1em;
+  }
+  /* line 1484, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile .block {
+    width: auto;
+  }
+  /* line 1487, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile .inner-col {
+    width: auto;
+  }
+  /* line 1490, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile div#main {
+    min-width: 0;
+    overflow: hidden;
+  }
+  /* line 1495, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: scroll;
+    padding: 0;
+    z-index: 10000;
+    background: #24282b;
+    box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+  /* line 1508, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul {
+    display: block;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin: 0 !important;
+    padding: 0;
+  }
+  /* line 1516, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li {
+    display: block;
+    margin: 0 !important;
+  }
+  /* line 1519, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li.home {
+    display: block;
+  }
+  /* line 1522, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li.button {
+    margin-left: auto;
+  }
+  /* line 1524, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li.button a {
+    border-radius: 0;
+    border: 0;
+    background: none;
+    height: auto;
+  }
+  /* line 1532, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li.separator:before {
+    display: none !important;
+  }
+  /* line 1535, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul li.more span {
+    display: none;
+  }
+  /* line 1539, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul a {
+    padding: 5px 20px !important;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", "Josefin Sans", Helvetica, Arial;
+    font-weight: 500;
+    color: #fff !important;
+    line-height: 3em !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+  }
+  /* line 1549, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul a.active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* line 1553, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul {
+    display: block;
+    z-index: 9000;
+    position: absolute;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+    box-sizing: border-box;
+  }
+  /* line 1566, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul a {
+    padding: 5px 20px !important;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", "Josefin Sans", Helvetica, Arial;
+    font-weight: 500;
+    color: #fff !important;
+    line-height: 3em !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+  }
+  /* line 1576, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul a:hover {
+    padding: 5px 20px !important;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", "Josefin Sans", Helvetica, Arial;
+    font-weight: 500;
+    color: #fff !important;
+    line-height: 3em !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+  }
+  /* line 1586, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul a:hover.active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* line 1590, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul a.active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* line 1594, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul ul:before {
+    display: none;
+  }
+  /* line 1598, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul.external li:nth-child(2) a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  /* line 1601, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header ul.pages > li:first-child a {
+    border-top: 0;
+  }
+  /* line 1605, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  html.mobile header#main-header div.mobile-nav-button {
+    display: block;
+  }
+
+  /* line 1610, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  /* line 1614, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer ul {
+    display: block;
+    margin-top: 1em;
+    padding: 1em 0;
+    border-top: 1px solid rgba(192, 199, 205, 0.3);
+  }
+  /* line 1619, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer ul li {
+    margin: 0 5px 0 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+  }
+  /* line 1625, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer p {
+    display: none;
+  }
+  /* line 1628, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer#main-footer div.country-selector {
+    border: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  /* line 1634, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  .flag-icon:before {
+    background-image: url("https://www.stripe.com/img/flags/sprite@2x.png");
+  }
+}
+/* line 1638, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1641, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.css .rule .hljs-keyword {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1645, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.javascript .hljs-title {
+  color: #333;
+  font-weight: 700;
+  font-weight: 400;
+}
+
+/* line 1650, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.nginx .hljs-title {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 1654, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: 700;
+}
+
+/* line 1658, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-list .hljs-keyword {
+  font-weight: 400;
+}
+
+/* line 1661, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: 700;
+}
+
+/* line 1665, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.vhdl .hljs-literal {
+  color: #458;
+  font-weight: 700;
+}
+
+/* line 1669, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.django .hljs-tag .hljs-keyword {
+  color: navy;
+  font-weight: 400;
+}
+
+/* line 1673, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.hljs-rules .hljs-property {
+  color: navy;
+  font-weight: 400;
+}
+
+/* line 1677, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.clojure .hljs-keyword {
+  color: #990073;
+}
+
+/* line 1680, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.scheme .hljs-keyword {
+  color: #990073;
+}
+
+/* line 1683, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+  width: 23px;
+  height: 17px;
+  background-image: url("https://www.stripe.com/img/flags/sprite.png");
+  background-size: 207px 204px;
+}
+
+/* line 1695, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ad:before {
+  background-position: -23px 0;
+}
+
+/* line 1698, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ae:before {
+  background-position: -138px -51px;
+}
+
+/* line 1701, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ag:before {
+  background-position: 0 -17px;
+}
+
+/* line 1704, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-am:before {
+  background-position: -23px -17px;
+}
+
+/* line 1707, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ar:before {
+  background-position: -46px 0;
+}
+
+/* line 1710, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-at:before {
+  background-position: -46px -17px;
+}
+
+/* line 1713, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-au:before {
+  background-position: 0 -34px;
+}
+
+/* line 1716, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-be:before {
+  background-position: -23px -34px;
+}
+
+/* line 1719, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-bf:before {
+  background-position: -46px -34px;
+}
+
+/* line 1722, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-bg:before {
+  background-position: 0 -51px;
+}
+
+/* line 1725, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-bo:before {
+  background-position: -23px -51px;
+}
+
+/* line 1728, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-br:before {
+  background-position: -46px -51px;
+}
+
+/* line 1731, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ca:before {
+  background-position: -69px 0;
+}
+
+/* line 1734, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cd:before {
+  background-position: -69px -17px;
+}
+
+/* line 1737, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cg:before {
+  background-position: -69px -34px;
+}
+
+/* line 1740, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ch:before {
+  background-position: -69px -51px;
+}
+
+/* line 1743, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cl:before {
+  background-position: 0 -68px;
+}
+
+/* line 1746, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cm:before {
+  background-position: -23px -68px;
+}
+
+/* line 1749, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cn:before {
+  background-position: -46px -68px;
+}
+
+/* line 1752, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-co:before {
+  background-position: -69px -68px;
+}
+
+/* line 1755, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-cz:before {
+  background-position: -92px 0;
+}
+
+/* line 1758, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-de:before {
+  background-position: -92px -17px;
+}
+
+/* line 1761, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-dj:before {
+  background-position: -92px -34px;
+}
+
+/* line 1764, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-dk:before {
+  background-position: -92px -51px;
+}
+
+/* line 1767, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-dz:before {
+  background-position: -92px -68px;
+}
+
+/* line 1770, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ee:before {
+  background-position: 0 -85px;
+}
+
+/* line 1773, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-eg:before {
+  background-position: -23px -85px;
+}
+
+/* line 1776, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-es:before {
+  background-position: -46px -85px;
+}
+
+/* line 1779, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-eu:before {
+  background-position: -69px -85px;
+}
+
+/* line 1782, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-fi:before {
+  background-position: -92px -85px;
+}
+
+/* line 1785, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-fr:before {
+  background-position: -115px 0;
+}
+
+/* line 1788, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ga:before {
+  background-position: -115px -17px;
+}
+
+/* line 1791, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-gb:before {
+  background-position: -115px -34px;
+}
+
+/* line 1794, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-gm:before {
+  background-position: -115px -51px;
+}
+
+/* line 1797, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-gt:before {
+  background-position: -115px -68px;
+}
+
+/* line 1800, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-hk:before {
+  background-position: -115px -85px;
+}
+
+/* line 1803, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-hn:before {
+  background-position: 0 -102px;
+}
+
+/* line 1806, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ht:before {
+  background-position: -23px -102px;
+}
+
+/* line 1809, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-hu:before {
+  background-position: -46px -102px;
+}
+
+/* line 1812, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-id:before {
+  background-position: -69px -102px;
+}
+
+/* line 1815, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ie:before {
+  background-position: -92px -102px;
+}
+
+/* line 1818, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-il:before {
+  background-position: -115px -102px;
+}
+
+/* line 1821, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-in:before {
+  background-position: 0 -119px;
+}
+
+/* line 1824, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-iq:before {
+  background-position: -23px -119px;
+}
+
+/* line 1827, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ir:before {
+  background-position: -46px -119px;
+}
+
+/* line 1830, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-it:before {
+  background-position: -69px -119px;
+}
+
+/* line 1833, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-jm:before {
+  background-position: -92px -119px;
+}
+
+/* line 1836, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-jo:before {
+  background-position: -115px -119px;
+}
+
+/* line 1839, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-jp:before {
+  background-position: -138px 0;
+}
+
+/* line 1842, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kg:before {
+  background-position: -138px -17px;
+}
+
+/* line 1845, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kn:before {
+  background-position: -138px -34px;
+}
+
+/* line 1848, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kp:before {
+  background-position: 0 0;
+}
+
+/* line 1851, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kr:before {
+  background-position: -138px -68px;
+}
+
+/* line 1854, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kw:before {
+  background-position: -138px -85px;
+}
+
+/* line 1857, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-kz:before {
+  background-position: -138px -102px;
+}
+
+/* line 1860, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-la:before {
+  background-position: -138px -119px;
+}
+
+/* line 1863, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-lb:before {
+  background-position: 0 -136px;
+}
+
+/* line 1866, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-lc:before {
+  background-position: -23px -136px;
+}
+
+/* line 1869, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ls:before {
+  background-position: -46px -136px;
+}
+
+/* line 1872, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-lu:before {
+  background-position: -69px -136px;
+}
+
+/* line 1875, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-lv:before {
+  background-position: -92px -136px;
+}
+
+/* line 1878, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-mg:before {
+  background-position: -115px -136px;
+}
+
+/* line 1881, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-mk:before {
+  background-position: -138px -136px;
+}
+
+/* line 1884, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ml:before {
+  background-position: -161px 0;
+}
+
+/* line 1887, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-mm:before {
+  background-position: -161px -17px;
+}
+
+/* line 1890, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-mt:before {
+  background-position: -161px -34px;
+}
+
+/* line 1893, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-mx:before {
+  background-position: -161px -51px;
+}
+
+/* line 1896, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-na:before {
+  background-position: -161px -68px;
+}
+
+/* line 1899, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ne:before {
+  background-position: -161px -85px;
+}
+
+/* line 1902, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ng:before {
+  background-position: -161px -102px;
+}
+
+/* line 1905, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ni:before {
+  background-position: -161px -119px;
+}
+
+/* line 1908, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-nl:before {
+  background-position: -161px -136px;
+}
+
+/* line 1911, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-no:before {
+  background-position: 0 -153px;
+}
+
+/* line 1914, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-nz:before {
+  background-position: -23px -153px;
+}
+
+/* line 1917, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-om:before {
+  background-position: -46px -153px;
+}
+
+/* line 1920, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pa:before {
+  background-position: -69px -153px;
+}
+
+/* line 1923, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pe:before {
+  background-position: -92px -153px;
+}
+
+/* line 1926, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pg:before {
+  background-position: -115px -153px;
+}
+
+/* line 1929, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pk:before {
+  background-position: -138px -153px;
+}
+
+/* line 1932, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pl:before {
+  background-position: -161px -153px;
+}
+
+/* line 1935, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-pt:before {
+  background-position: -184px 0;
+}
+
+/* line 1938, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-py:before {
+  background-position: -184px -17px;
+}
+
+/* line 1941, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-qa:before {
+  background-position: -184px -34px;
+}
+
+/* line 1944, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ro:before {
+  background-position: -184px -51px;
+}
+
+/* line 1947, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ru:before {
+  background-position: -184px -68px;
+}
+
+/* line 1950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-rw:before {
+  background-position: -184px -85px;
+}
+
+/* line 1953, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-sa:before {
+  background-position: -184px -102px;
+}
+
+/* line 1956, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-se:before {
+  background-position: -184px -119px;
+}
+
+/* line 1959, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-sg:before {
+  background-position: -184px -136px;
+}
+
+/* line 1962, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-sl:before {
+  background-position: -184px -153px;
+}
+
+/* line 1965, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-sn:before {
+  background-position: 0 -170px;
+}
+
+/* line 1968, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-so:before {
+  background-position: -23px -170px;
+}
+
+/* line 1971, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-sv:before {
+  background-position: -46px -170px;
+}
+
+/* line 1974, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-td:before {
+  background-position: -69px -170px;
+}
+
+/* line 1977, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-tj:before {
+  background-position: -92px -170px;
+}
+
+/* line 1980, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-tl:before {
+  background-position: -115px -170px;
+}
+
+/* line 1983, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-tr:before {
+  background-position: -138px -170px;
+}
+
+/* line 1986, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-tz:before {
+  background-position: -161px -170px;
+}
+
+/* line 1989, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ua:before {
+  background-position: -184px -170px;
+}
+
+/* line 1992, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-us:before {
+  background-position: 0 -187px;
+}
+
+/* line 1995, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ve:before {
+  background-position: -23px -187px;
+}
+
+/* line 1998, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-vn:before {
+  background-position: -46px -187px;
+}
+
+/* line 2001, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+.flag-icon-ye:before {
+  background-position: -69px -187px;
+}
+
+/* line 2005, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer {
+  background: #000;
+  color: #f7eec9;
+}
+/* line 2011, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .upper-border {
+  border-top: 5px solid #ed6a1e;
+  border-bottom: 5px solid #f7eec9;
+  height: 10px;
+}
+/* line 2016, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .bottom-border {
+  border-top: 5px solid #b1d4bb;
+  border-bottom: 5px solid #5ca39e;
+  height: 10px;
+}
+/* line 2021, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 30px 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 2029, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner h3 {
+  color: #44f7a8;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 auto 20px;
+}
+/* line 2036, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner form {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 50px;
+}
+/* line 2042, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner form input {
+  flex: 0 0 150px;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* line 2049, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner form input::-webkit-input-placeholder, footer .footer-inner form input::-moz-placeholder, footer .footer-inner form input:-ms-input-placeholder, footer .footer-inner form input:-moz-placeholder {
+  color: #5ca39f;
+}
+/* line 2059, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner form button {
+  background: #fa5c23;
+  color: #fff;
+  flex: 0 0 80px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  text-transform: uppercase;
+}
+/* line 2071, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ul {
+  margin: 0 auto 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* Media Queries - Standard */
+}
+@media screen and (min-width: 1024px) {
+  /* line 2071, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer .footer-inner ul {
+    flex-direction: row;
+  }
+}
+/* line 2096, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ul li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  /* line 2096, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+  footer .footer-inner ul li {
+    margin-bottom: 0;
+  }
+}
+/* line 2102, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ul li a {
+  color: #f6eec9;
+  font-family: "Righteous";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 2110, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ol {
+  margin: 0 auto 30px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  max-width: 240px;
+  justify-content: space-around;
+}
+/* line 2118, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ol li {
+  font-size: 30px;
+}
+/* line 2120, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner ol li a {
+  color: #f6eec9;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 2128, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .footer-inner p {
+  font-size: 15px;
+  color: #f6eec9;
+  margin: 0 auto 20px;
+  font-family: "Righteous";
+}
+/* line 2135, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/shared_site.scss */
+footer .logo {
+  width: 200px;
+  margin-left: -5px;
+}

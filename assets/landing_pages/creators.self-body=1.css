@@ -1,0 +1,2469 @@
+/* line 107, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 110, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main {
+  position: relative;
+  display: block;
+}
+/* line 113, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main h2[class^=common-Uppercase] {
+  color: #32325d;
+  margin-bottom: 20px;
+}
+/* line 117, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header {
+  position: relative;
+  background: #1F1F1F;
+  overflow: hidden;
+}
+/* line 122, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .stripes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -80px;
+  transform: skewY(-12deg);
+}
+/* line 129, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .stripes .stripe {
+  position: absolute;
+  height: 190px;
+}
+/* line 133, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .stripes .s1 {
+  top: 0;
+  left: 0;
+  width: 30%;
+  background: linear-gradient(90deg, #ffad5a, rgba(250, 175, 82, 0.25));
+}
+/* line 139, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .stripes .s2 {
+  top: 190px;
+  left: 0;
+  width: 38%;
+  background: linear-gradient(90deg, #ffcd68, rgba(255, 199, 107, 0));
+}
+/* line 145, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .stripes .s3 {
+  top: 380px;
+  right: 0;
+  width: 36%;
+  background: linear-gradient(90deg, rgba(254, 228, 144, 0), #ffda84);
+}
+/* line 152, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .intro {
+  margin-top: 190px;
+  text-align: center;
+  will-change: transform;
+  z-index: 1;
+  position: relative;
+}
+/* line 158, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .intro .common-PageTitle {
+  color: #F7EFCB;
+  font-weight: 300;
+}
+/* line 162, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .intro .common-Button--default {
+  margin-top: 25px;
+}
+/* line 166, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  perspective: 500px;
+  pointer-events: none;
+}
+/* line 173, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map .roads {
+  width: calc(100% +1000px);
+  height: 100%;
+  left: -500px;
+  transform: rotateX(41deg);
+  opacity: 0.08;
+}
+/* line 182, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map .surface-roads {
+  position: absolute;
+  width: 100%;
+  height: 1300px;
+  top: -125px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/roads.svg");
+  background-position: 50%;
+  transform: translateY(-650px);
+  animation: roads 10s linear infinite;
+}
+/* line 193, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map .freeway {
+  position: absolute;
+  width: 70px;
+  top: -335px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -35px;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(165, 140, 126, 0.45);
+  transform: translateZ(100px);
+}
+/* line 205, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map .freeway:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  top: 0;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -20px;
+  background-color: #ffcd68;
+}
+/* line 216, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+main header .road-map .marker {
+  position: absolute;
+  width: 112px;
+  height: 67px;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -56px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/atlas-marker.png");
+  background-size: 100% 100%;
+  transform: translateZ(44px);
+}
+
+/* line 231, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+/* line 234, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.columns .left {
+  flex-basis: 50%;
+}
+/* line 237, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.columns .right {
+  flex-basis: 50%;
+}
+
+/* line 242, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.intro-copy {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* line 246, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.angle-clip-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 250, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalFooter {
+  margin-top: -500px;
+}
+/* line 252, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalFooter .globalFooterCTA {
+  padding-top: 570px;
+}
+/* line 254, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalFooter .globalFooterCTA .container-lg {
+  align-items: flex-start;
+}
+/* line 258, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalFooter .globalFooterCTA .content .subtitle {
+  color: #e39f48;
+}
+/* line 261, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalFooter .globalFooterCTA .content p {
+  margin-bottom: 35px;
+}
+
+/* line 267, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(82, 95, 127, 0);
+  z-index: 1000;
+  pointer-events: none;
+  transition: background-color .25s ease-in-out;
+}
+/* line 282, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.modal-overlay.visible {
+  background-color: rgba(82, 95, 127, 0.4);
+  pointer-events: all;
+}
+/* line 285, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.modal-overlay.visible .join-modal {
+  opacity: 1;
+  transform: none;
+}
+/* line 289, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.modal-overlay.visible .join-modal.success > .success .content {
+  pointer-events: all;
+}
+
+/* line 295, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 800px;
+  max-height: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  transform: scale(0.75);
+  padding: 10px;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 315, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 10px;
+  right: 10px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/close.svg");
+  cursor: pointer;
+}
+/* line 323, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .close:active {
+  opacity: .65;
+}
+/* line 327, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .column {
+  flex-shrink: 0;
+  padding: 20px;
+  transition: opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* line 332, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .column h2 {
+  font-size: 17px;
+}
+/* line 334, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .column h2 + p {
+  margin-top: 5px;
+}
+/* line 338, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .column p {
+  font-size: 15px;
+  line-height: 24px;
+}
+/* line 344, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access header {
+  display: flex;
+  position: relative;
+}
+/* line 347, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access header .logo {
+  margin-right: 20px;
+}
+/* line 350, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access header .common-BodyText {
+  color: #1F1F1F;
+  font-size: 17px;
+}
+/* line 355, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 25px;
+}
+/* line 360, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .row {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 0;
+}
+/* line 367, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .row + .row {
+  border-top: 1px solid #f3f5f8;
+}
+/* line 370, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .row.invalid .label {
+  color: #e25950;
+}
+/* line 374, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .label {
+  color: #32325d;
+  width: 25%;
+  padding-right: 10px;
+  font-size: 18px;
+}
+/* line 381, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form input {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Josefin Sans", "Josefin Sans", "Josefin Sans", sans-serif;
+}
+/* line 390, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form input:-ms-input-placeholder {
+  color: #aab7c4;
+}
+/* line 394, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form textarea {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans", "Josefin Sans", "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  color: #32325d;
+  resize: none;
+  min-height: 70px;
+}
+/* line 408, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form textarea:-ms-input-placeholder {
+  color: #aab7c4;
+}
+/* line 412, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form input::-webkit-input-placeholder {
+  color: #aab7c4;
+}
+/* line 415, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form textarea::-webkit-input-placeholder {
+  color: #aab7c4;
+}
+/* line 418, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form input::-moz-placeholder {
+  color: #aab7c4;
+  opacity: 1;
+}
+/* line 422, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form textarea::-moz-placeholder {
+  color: #aab7c4;
+  opacity: 1;
+}
+/* line 426, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form input[type=text] {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  color: #32325d;
+  font-size: 21px;
+}
+/* line 435, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .select {
+  position: relative;
+  width: 60%;
+}
+/* line 438, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .select:after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 5px;
+  top: 50%;
+  margin-top: -2px;
+  right: 0;
+  background-image: url("https://www.stripe.com/img/v3/atlas/select-arrow.svg");
+}
+/* line 448, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .select select {
+  display: block;
+  position: relative;
+  width: calc(100% - 25px);
+  border: none;
+  outline: none;
+  appearance: none;
+  background: transparent;
+  font-size: 15px;
+  line-height: 24px;
+  color: #32325d;
+  font-family: "Josefin Sans", "Josefin Sans", "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+/* line 461, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .request-access form .select select:focus {
+  color: #6772e5;
+}
+/* line 468, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .use-invite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf4ee;
+  text-align: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* line 479, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .use-invite .icon {
+  margin-bottom: 25px;
+  margin-left: -10px;
+}
+/* line 483, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .use-invite .common-Link {
+  font-weight: 400;
+}
+/* line 487, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+/* line 498, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .success .content {
+  text-align: center;
+  opacity: 0;
+  transform: scale(1.5);
+  transition-property: opacity,transform;
+  transition-duration: .35s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* line 510, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .success .icon {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 514, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .success h2 {
+  margin-bottom: 10px;
+  max-width: 450px;
+}
+/* line 518, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal > .success p {
+  max-width: 450px;
+}
+/* line 523, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal .common-Button {
+  margin: 25px 0 0;
+  cursor: pointer;
+}
+/* line 528, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal.success > .column {
+  opacity: 0;
+}
+/* line 531, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.join-modal.success > .success .content {
+  opacity: 1;
+  transform: none;
+}
+
+/* line 538, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo {
+  background-size: 1270px 1240px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/network/atlas-network-logos-30.png");
+}
+
+/* line 542, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard {
+  margin-top: 130px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 546, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .network-logo {
+    background-image: url("https://www.stripe.com/img/v3/atlas/network/atlas-network-logos@2x-30.png");
+  }
+
+  /* line 550, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.features .devices-dashboard .laptop .screen {
+    background-image: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-screen@2x.jpg");
+  }
+}
+/* line 554, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company="1crowd"] {
+  background-position: -181px -1036px;
+  width: 134px;
+  height: 48px;
+}
+
+/* line 559, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company="500-startups"] {
+  background-position: -1150px -902px;
+  width: 70px;
+  height: 70px;
+}
+
+/* line 564, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=adplanky] {
+  background-position: 0 -988px;
+  width: 191px;
+  height: 46px;
+}
+
+/* line 569, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=african-technology-foundation] {
+  background-position: 0 -88px;
+  width: 137px;
+  height: 136px;
+}
+
+/* line 574, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=allvp] {
+  background-position: -396px -873px;
+  width: 239px;
+  height: 29px;
+}
+
+/* line 579, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=alterna] {
+  background-position: -981px -195px;
+  width: 106px;
+  height: 81px;
+}
+
+/* line 584, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=altos-business-group] {
+  background-position: 0 -601px;
+  width: 169px;
+  height: 72px;
+}
+
+/* line 589, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=alven-capital] {
+  background-position: -682px -1087px;
+  width: 186px;
+  height: 29px;
+}
+
+/* line 594, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=angelhack] {
+  background-position: -724px -77px;
+  width: 142px;
+  height: 81px;
+}
+
+/* line 599, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=angelpad] {
+  background-position: -752px -812px;
+  width: 124px;
+  height: 31px;
+}
+
+/* line 604, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=appworks] {
+  background-position: -573px -1139px;
+  width: 158px;
+  height: 37px;
+}
+
+/* line 609, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=aslanoba-capital] {
+  background-position: -981px -414px;
+  width: 118px;
+  height: 69px;
+}
+
+/* line 614, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=astrolabs] {
+  background-position: -257px 0;
+  width: 220px;
+  height: 79px;
+}
+
+/* line 619, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=beenext] {
+  background-position: -690px -1036px;
+  width: 220px;
+  height: 25px;
+}
+
+/* line 624, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=blackbox] {
+  background-position: -1150px -592px;
+  width: 73px;
+  height: 80px;
+}
+
+/* line 629, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=bluechilli] {
+  background-position: -381px -988px;
+  width: 172px;
+  height: 45px;
+}
+
+/* line 634, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=brainsparks] {
+  background-position: -479px -267px;
+  width: 194px;
+  height: 68px;
+}
+
+/* line 639, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=cairo-angels] {
+  background-position: -185px -381px;
+  width: 265px;
+  height: 52px;
+}
+
+/* line 644, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=cicada-innovations] {
+  background-position: 0 -812px;
+  width: 162px;
+  height: 59px;
+}
+
+/* line 649, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ciie-initiatives] {
+  background-position: 0 -459px;
+  width: 173px;
+  height: 75px;
+}
+
+/* line 654, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=creandum] {
+  background-position: -1031px -1139px;
+  width: 191px;
+  height: 20px;
+}
+
+/* line 659, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ddf] {
+  background-position: -981px -57px;
+  width: 147px;
+  height: 60px;
+}
+
+/* line 664, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=digital-factory] {
+  background-position: -257px -169px;
+  width: 220px;
+  height: 49px;
+}
+
+/* line 669, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=e] {
+  background-position: 0 -1139px;
+  width: 126px;
+  height: 56px;
+}
+
+/* line 674, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=earlybird] {
+  background-position: -724px -988px;
+  width: 175px;
+  height: 37px;
+}
+
+/* line 679, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=eleven] {
+  background-position: -422px -1139px;
+  width: 149px;
+  height: 40px;
+}
+
+/* line 684, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=emerging-business-factory] {
+  background-position: -981px -742px;
+  width: 125px;
+  height: 61px;
+}
+
+/* line 689, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=endeavor] {
+  background-position: -359px -913px;
+  width: 205px;
+  height: 19px;
+}
+
+/* line 694, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=etohum] {
+  background-position: -981px 0;
+  width: 167px;
+  height: 55px;
+}
+
+/* line 699, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=expa] {
+  background-position: -733px -1139px;
+  width: 144px;
+  height: 32px;
+}
+
+/* line 704, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=flat6labs] {
+  background-position: 0 -1087px;
+  width: 172px;
+  height: 50px;
+}
+
+/* line 709, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=fresco-capital] {
+  background-position: -1150px -1044px;
+  width: 102px;
+  height: 42px;
+}
+
+/* line 714, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=frontline] {
+  background-position: -510px -1036px;
+  width: 178px;
+  height: 32px;
+}
+
+/* line 719, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=g-startup-worldwide] {
+  background-position: -724px -242px;
+  width: 123px;
+  height: 91px;
+}
+
+/* line 724, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=gan] {
+  background-position: -1150px -828px;
+  width: 73px;
+  height: 72px;
+}
+
+/* line 729, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=garage-society] {
+  background-position: -981px -355px;
+  width: 145px;
+  height: 57px;
+}
+
+/* line 734, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=gaza-sky-geeks] {
+  background-position: -724px -335px;
+  width: 148px;
+  height: 73px;
+}
+
+/* line 739, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=german-accelerator] {
+  background-position: -164px -812px;
+  width: 172px;
+  height: 55px;
+}
+
+/* line 744, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=global-entrepreneurship-network] {
+  background-position: 0 -226px;
+  width: 202px;
+  height: 78px;
+}
+
+/* line 749, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=globerly] {
+  background-position: -1150px -674px;
+  width: 75px;
+  height: 75px;
+}
+
+/* line 754, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=golden-gate-ventures] {
+  background-position: 0 -381px;
+  width: 183px;
+  height: 76px;
+}
+
+/* line 759, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=h2-ventures] {
+  background-position: -885px 0;
+  width: 94px;
+  height: 100px;
+}
+
+/* line 764, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=hackquarters] {
+  background-position: -394px -936px;
+  width: 209px;
+  height: 42px;
+}
+
+/* line 769, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=hkcocoon] {
+  background-position: -479px -422px;
+  width: 226px;
+  height: 32px;
+}
+
+/* line 774, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=hubba] {
+  background-position: -479px -177px;
+  width: 154px;
+  height: 88px;
+}
+
+/* line 779, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=hummingbird] {
+  background-position: -912px -1036px;
+  width: 206px;
+  height: 24px;
+}
+
+/* line 784, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ibtikar-fund] {
+  background-position: -257px -81px;
+  width: 201px;
+  height: 86px;
+}
+
+/* line 789, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ict-hub] {
+  background-position: -139px -88px;
+  width: 84px;
+  height: 121px;
+}
+
+/* line 794, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ihorizon] {
+  background-position: -1062px -805px;
+  width: 63px;
+  height: 57px;
+}
+
+/* line 799, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=incubadora-sinergia] {
+  background-position: 0 -873px;
+  width: 153px;
+  height: 61px;
+}
+
+/* line 804, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=indiegogo] {
+  background-position: -479px -337px;
+  width: 158px;
+  height: 83px;
+}
+
+/* line 809, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ingressive] {
+  background-position: -870px -1087px;
+  width: 170px;
+  height: 27px;
+}
+
+/* line 814, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=innovation-nest] {
+  background-position: 0 -1036px;
+  width: 179px;
+  height: 49px;
+}
+
+/* line 819, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=international-enterprise-singapore] {
+  background-position: -724px -410px;
+  width: 127px;
+  height: 83px;
+}
+
+/* line 824, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=invest2innovate] {
+  background-position: -1080px -485px;
+  width: 65px;
+  height: 65px;
+}
+
+/* line 829, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=ispace-foundation] {
+  background-position: -724px -160px;
+  width: 141px;
+  height: 80px;
+}
+
+/* line 834, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=itc] {
+  background-position: -175px -459px;
+  width: 177px;
+  height: 73px;
+}
+
+/* line 839, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=jaaga-startup] {
+  background-position: -981px -903px;
+  width: 152px;
+  height: 31px;
+}
+
+/* line 844, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=kickstarter] {
+  background-position: -637px -873px;
+  width: 215px;
+  height: 26px;
+}
+
+/* line 849, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=kima-ventures] {
+  background-position: -1150px 0;
+  width: 120px;
+  height: 60px;
+}
+
+/* line 854, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=knife-capital] {
+  background-position: -202px -306px;
+  width: 220px;
+  height: 64px;
+}
+
+/* line 859, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=kstartup] {
+  background-position: -193px -988px;
+  width: 186px;
+  height: 46px;
+}
+
+/* line 864, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=latino-startup-alliance] {
+  background-position: -981px -625px;
+  width: 135px;
+  height: 57px;
+}
+
+/* line 869, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=launch-academy] {
+  background-position: -722px -739px;
+  width: 159px;
+  height: 39px;
+}
+
+/* line 874, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=launch-rockit] {
+  background-position: -1150px -285px;
+  width: 108px;
+  height: 62px;
+}
+
+/* line 879, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=launchub-ventures] {
+  background-position: 0 -936px;
+  width: 179px;
+  height: 50px;
+}
+
+/* line 884, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=letsventure] {
+  background-position: -512px -739px;
+  width: 208px;
+  height: 45px;
+}
+
+/* line 889, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=lev-interactive] {
+  background-position: -479px -58px;
+  width: 117px;
+  height: 117px;
+}
+
+/* line 894, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=lightning-lab] {
+  background-position: 0 -306px;
+  width: 200px;
+  height: 73px;
+}
+
+/* line 899, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=lisbon-challenge] {
+  background-position: -1150px -209px;
+  width: 93px;
+  height: 74px;
+}
+
+/* line 904, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=lotte-accelerator] {
+  background-position: -479px 0;
+  width: 243px;
+  height: 56px;
+}
+
+/* line 909, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=mita-ventures] {
+  background-position: -551px -601px;
+  width: 148px;
+  height: 50px;
+}
+
+/* line 914, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=muckerlab] {
+  background-position: -197px -536px;
+  width: 198px;
+  height: 62px;
+}
+
+/* line 919, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=numa] {
+  background-position: -174px -1087px;
+  width: 159px;
+  height: 39px;
+}
+
+/* line 924, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=outlierz] {
+  background-position: -267px -1139px;
+  width: 153px;
+  height: 40px;
+}
+
+/* line 929, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=paris-co] {
+  background-position: -1150px -511px;
+  width: 79px;
+  height: 79px;
+}
+
+/* line 934, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=paua-ventures] {
+  background-position: -781px -936px;
+  width: 219px;
+  height: 30px;
+}
+
+/* line 939, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=pioneers-ventures] {
+  background-position: -1150px -62px;
+  width: 84px;
+  height: 84px;
+}
+
+/* line 944, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=plug-and-play-tech-center] {
+  background-position: -512px -1087px;
+  width: 168px;
+  height: 33px;
+}
+
+/* line 949, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=reaktor-ventures] {
+  background-position: -155px -913px;
+  width: 202px;
+  height: 21px;
+}
+
+/* line 954, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=real-ventures] {
+  background-position: -397px -536px;
+  width: 266px;
+  height: 42px;
+}
+
+/* line 959, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=savannah-fund] {
+  background-position: -981px -684px;
+  width: 137px;
+  height: 56px;
+}
+
+/* line 964, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=scaleup-usa] {
+  background-position: -1150px -751px;
+  width: 75px;
+  height: 75px;
+}
+
+/* line 969, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=scalex-ventures] {
+  background-position: 0 -1197px;
+  width: 137px;
+  height: 43px;
+}
+
+/* line 974, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=sektor5] {
+  background-position: -1150px -974px;
+  width: 68px;
+  height: 68px;
+}
+
+/* line 979, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=sente-link] {
+  background-position: 0 0;
+  width: 255px;
+  height: 86px;
+}
+
+/* line 984, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=serena-capital] {
+  background-position: -1150px -349px;
+  width: 110px;
+  height: 60px;
+}
+
+/* line 989, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=slingshot-accelerator] {
+  background-position: -598px -58px;
+  width: 111px;
+  height: 85px;
+}
+
+/* line 994, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=spark-labs] {
+  background-position: -597px -459px;
+  width: 123px;
+  height: 45px;
+}
+
+/* line 999, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=sparklabs-global-ventures] {
+  background-position: -174px -675px;
+  width: 181px;
+  height: 58px;
+}
+
+/* line 1004, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=speed-bdd] {
+  background-position: -981px -485px;
+  width: 97px;
+  height: 84px;
+}
+
+/* line 1009, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=start-up-chile] {
+  background-position: -185px -435px;
+  width: 246px;
+  height: 22px;
+}
+
+/* line 1014, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startit] {
+  background-position: -357px -675px;
+  width: 182px;
+  height: 56px;
+}
+
+/* line 1019, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-angels] {
+  background-position: -317px -1036px;
+  width: 191px;
+  height: 33px;
+}
+
+/* line 1024, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-farm] {
+  background-position: -338px -812px;
+  width: 203px;
+  height: 46px;
+}
+
+/* line 1029, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-grind] {
+  background-position: -541px -675px;
+  width: 230px;
+  height: 44px;
+}
+
+/* line 1034, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-iceland] {
+  background-position: -724px -495px;
+  width: 124px;
+  height: 84px;
+}
+
+/* line 1039, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-turkey] {
+  background-position: -335px -1087px;
+  width: 175px;
+  height: 34px;
+}
+
+/* line 1044, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startup-wise-guys] {
+  background-position: 0 -536px;
+  width: 195px;
+  height: 63px;
+}
+
+/* line 1049, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startupbootcamp] {
+  background-position: -204px -226px;
+  width: 246px;
+  height: 62px;
+}
+
+/* line 1054, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startuphighway] {
+  background-position: -724px 0;
+  width: 159px;
+  height: 75px;
+}
+
+/* line 1059, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=startupyard] {
+  background-position: 0 -675px;
+  width: 172px;
+  height: 62px;
+}
+
+/* line 1064, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=strong-ventures] {
+  background-position: -543px -812px;
+  width: 207px;
+  height: 45px;
+}
+
+/* line 1069, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=t-jump] {
+  background-position: -128px -1139px;
+  width: 137px;
+  height: 51px;
+}
+
+/* line 1074, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=taiwan-startup-stadium] {
+  background-position: -147px -739px;
+  width: 180px;
+  height: 53px;
+}
+
+/* line 1079, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=techstars] {
+  background-position: -981px -278px;
+  width: 114px;
+  height: 75px;
+}
+
+/* line 1084, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=tekxl] {
+  background-position: -879px -1139px;
+  width: 150px;
+  height: 29px;
+}
+
+/* line 1089, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=the-founder-institute] {
+  background-position: -171px -601px;
+  width: 178px;
+  height: 66px;
+}
+
+/* line 1094, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=the-junction] {
+  background-position: 0 -739px;
+  width: 145px;
+  height: 71px;
+}
+
+/* line 1099, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=the-refiners] {
+  background-position: -1150px -411px;
+  width: 65px;
+  height: 98px;
+}
+
+/* line 1104, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=thefamily] {
+  background-position: -981px -805px;
+  width: 79px;
+  height: 96px;
+}
+
+/* line 1109, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=thestartup-com] {
+  background-position: -155px -873px;
+  width: 239px;
+  height: 38px;
+}
+
+/* line 1114, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=thought-for-food] {
+  background-position: -981px -119px;
+  width: 117px;
+  height: 74px;
+}
+
+/* line 1119, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=tiphub-africa] {
+  background-position: -329px -739px;
+  width: 181px;
+  height: 52px;
+}
+
+/* line 1124, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=tlabs] {
+  background-position: -1002px -936px;
+  width: 142px;
+  height: 29px;
+}
+
+/* line 1129, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=vanedge-capital] {
+  background-position: -901px -988px;
+  width: 182px;
+  height: 35px;
+}
+
+/* line 1134, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=vectr-ventures] {
+  background-position: -605px -936px;
+  width: 174px;
+  height: 40px;
+}
+
+/* line 1139, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=venture-for-america] {
+  background-position: -555px -988px;
+  width: 167px;
+  height: 39px;
+}
+
+/* line 1144, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=venturewell] {
+  background-position: -354px -459px;
+  width: 241px;
+  height: 53px;
+}
+
+/* line 1149, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=wassel] {
+  background-position: -1150px -148px;
+  width: 117px;
+  height: 59px;
+}
+
+/* line 1154, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=wayra] {
+  background-position: -351px -601px;
+  width: 198px;
+  height: 54px;
+}
+
+/* line 1159, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=wolves-summit] {
+  background-position: -724px -581px;
+  width: 156px;
+  height: 66px;
+}
+
+/* line 1164, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=y-combinator] {
+  background-position: -181px -936px;
+  width: 211px;
+  height: 42px;
+}
+
+/* line 1169, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.network-logo[data-company=york-butter-factory] {
+  background-position: -981px -571px;
+  width: 149px;
+  height: 52px;
+}
+
+@keyframes roads {
+  0% {
+    transform: translateY(-650px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* line 1185, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description {
+  position: relative;
+  padding: 30px 0 120px;
+  background: #FCA839;
+}
+/* line 1189, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description .common-IntroText {
+  color: #F7EFCB;
+}
+/* line 1193, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description .common-BodyText {
+  color: #F7EFCB;
+}
+/* line 1196, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description .top-edge {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  bottom: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* line 1204, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description .top-edge svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(165,140,126,0.15)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  filter: drop-shadow(0 0 10px rgba(165, 140, 126, 0.15));
+}
+/* line 1212, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.description .intro-copy {
+  margin-bottom: 60px;
+}
+/* line 1217, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features {
+  position: relative;
+  padding: 0 0 120px;
+  margin-top: 90px;
+}
+/* line 1221, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .intro-copy {
+  text-align: left;
+  margin-bottom: 40px;
+}
+/* line 1224, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .intro-copy h2 {
+  margin-bottom: 20px;
+}
+/* line 1228, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard {
+  display: none;
+  width: 1000px;
+  height: 750px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -100px;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+/* line 1243, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard.loaded {
+  opacity: 1;
+}
+/* line 1246, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard div {
+  position: absolute;
+  width: 1000px;
+  height: 750px;
+  background-size: 100% 100%;
+}
+/* line 1252, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .screen {
+  transform-origin: 0 0;
+  overflow: hidden;
+  will-change: transform;
+}
+/* line 1258, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 1265, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .laptop {
+  -webkit-mask: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-mask.svg");
+  mask: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-mask.svg");
+}
+/* line 1268, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .laptop .test {
+  background-image: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/_test_laptop-screen.svg");
+}
+/* line 1271, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .laptop .device {
+  background-image: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-device.jpg");
+}
+/* line 1274, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .laptop .controls {
+  background-image: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-controls.svg");
+}
+/* line 1277, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .laptop .screen {
+  width: 720px;
+  height: 450px;
+  border-radius: 6px;
+  transform: matrix3d(0.85621982, 0.02193797, 0, 0.00007059, 0.0889447, 0.80795816, 0, -0.00009583, 0, 0, 1, 0, 35, 42, 0, 1);
+  box-shadow: 1px 1px 4px rgba(107, 124, 147, 0.5);
+  background: url("http://lvh.me:5000/assets/landing_pages/screen.jpg") 0 0/100% 100%;
+}
+/* line 1289, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .devices-dashboard .ground .shadow {
+  background-image: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/ground-shadow.png");
+}
+/* line 1293, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features .columns .right {
+  position: relative;
+  margin-top: 52px;
+}
+/* line 1297, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features ul.incorporation-features {
+  display: block;
+  position: relative;
+  list-style-type: none;
+  font-size: 17px;
+  line-height: 26px;
+  color: #6b7c93;
+  background-color: #eaf4ee;
+  border-radius: 6px;
+  padding: 20px 25px 20px 55px;
+}
+/* line 1308, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features ul.incorporation-features li {
+  position: relative;
+}
+/* line 1310, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features ul.incorporation-features li:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  left: -32px;
+  top: 4px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/feature_icons/document.svg");
+}
+/* line 1319, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.features ul.incorporation-features li + li {
+  margin-top: 15px;
+}
+/* line 1325, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials {
+  position: relative;
+  padding: 60px 0 30px;
+  background-color: #f5be58;
+}
+/* line 1329, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .mask-container {
+  position: relative;
+  padding: 0;
+  mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent 100%);
+}
+/* line 1334, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .quotes {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 0 10px;
+  margin-bottom: -10px;
+  mask-image: linear-gradient(180deg, #000, #000 calc(100% - 10px), transparent calc(100% - 10px), transparent 100%);
+}
+/* line 1341, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .quotes.scrollable {
+  overflow: auto;
+}
+/* line 1345, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .quotes::-webkit-scrollbar {
+  display: none;
+}
+/* line 1348, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .pages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 30px auto 0;
+}
+/* line 1353, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .pages .page {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* line 1364, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .testimonial {
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+/* line 1370, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .logo {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 1373, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials .logo.nyt {
+  margin-top: 5px;
+}
+/* line 1377, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials blockquote {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #8d212e;
+  font-style: italic;
+}
+/* line 1383, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials blockquote:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 9px;
+  top: -7px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/quotes.svg");
+  background-size: 24px 9px;
+  background-position: 100% 0;
+  right: -7px;
+}
+/* line 1395, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.testimonials blockquote:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 9px;
+  top: -7px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/quotes.svg");
+  background-size: 24px 9px;
+  background-position: 0 0;
+  left: -7px;
+  margin-left: -12px;
+}
+/* line 1410, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users {
+  position: relative;
+  padding: 120px 0 300px;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* line 1416, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users > * {
+  pointer-events: all;
+}
+/* line 1419, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eaf4ee;
+  bottom: 440px;
+  transform: skewY(-12deg);
+}
+/* line 1429, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .intro-copy {
+  position: relative;
+}
+/* line 1431, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .intro-copy h2 {
+  color: #FCA839;
+}
+/* line 1436, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .globe {
+  position: relative;
+  height: 380px;
+  padding: 0;
+}
+/* line 1440, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .globe canvas {
+  position: relative;
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 1446, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details {
+  max-width: 1140px;
+}
+/* line 1448, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .common-Card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-top: -30px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* line 1457, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .common-Card .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50vw;
+  margin-top: -24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 1469, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .common-Card .nav.prev {
+  left: -15px;
+}
+/* line 1472, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .common-Card .nav.next {
+  right: -15px;
+}
+/* line 1477, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos {
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+/* line 1486, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 1494, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.during {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/during.jpg");
+}
+/* line 1497, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.iris {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/iris.jpg");
+}
+/* line 1500, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.metafused {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/metafused.jpg");
+}
+/* line 1503, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.pasilobus {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/pasilobus.jpg");
+}
+/* line 1506, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.tress {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/tress.jpg");
+}
+/* line 1509, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .photos .image.zumrod {
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_photos/zumrod.jpg");
+}
+/* line 1514, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px 10px;
+}
+/* line 1520, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  transform: skew(-12deg);
+  transform-origin: 0 0;
+  pointer-events: none;
+  display: none;
+  border-top-right-radius: 10px;
+}
+/* line 1537, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions .mask-container {
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent 100%);
+  z-index: 1;
+}
+/* line 1543, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions .scroll-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+  mask-image: linear-gradient(180deg, #000, #000 calc(100% - 10px), transparent calc(100% - 10px), transparent 100%);
+}
+/* line 1551, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions .scroll-container.scrollable {
+  overflow: auto;
+}
+/* line 1555, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions .scroll-container::-webkit-scrollbar {
+  display: none;
+}
+/* line 1558, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .descriptions .user {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+/* line 1565, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo {
+  margin-bottom: 25px;
+  will-change: transform;
+}
+/* line 1568, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.during {
+  width: 83px;
+  height: 17px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/during.png");
+}
+/* line 1573, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.iris {
+  width: 67px;
+  height: 78px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/iris.png");
+}
+/* line 1578, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.metafused {
+  width: 203px;
+  height: 72px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/metafused.png");
+}
+/* line 1583, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.pasilobus {
+  width: 194px;
+  height: 39px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/pasilobus.png");
+}
+/* line 1588, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.tress {
+  width: 121px;
+  height: 68px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/tress.png");
+}
+/* line 1593, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.users .user-details .logo.zumrod {
+  width: 142px;
+  height: 57px;
+  background-image: url("https://www.stripe.com/img/v3/atlas/user_logos/zumrod.png");
+}
+/* line 1601, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources {
+  position: relative;
+  padding: 80px 0 130px;
+  margin-top: -311px;
+  z-index: 1;
+}
+/* line 1606, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .stripes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1F1F1F;
+  top: -130px;
+  transform: skewY(-12deg);
+}
+/* line 1615, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .stripes .stripe {
+  position: absolute;
+  height: 190px;
+}
+/* line 1619, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .stripes .s1 {
+  top: 0;
+  left: 12%;
+  width: 40%;
+}
+/* line 1625, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .stripes .s2 {
+  bottom: 0;
+  left: 0;
+  width: 51%;
+}
+/* line 1632, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .container-lg {
+  align-items: flex-start;
+  position: relative;
+  max-width: 1140px;
+  z-index: 1;
+}
+/* line 1638, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .copy {
+  color: #fff;
+}
+/* line 1640, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .copy h2 {
+  color: #fff;
+}
+/* line 1643, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .copy h3 {
+  color: #fff;
+}
+/* line 1646, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .copy p {
+  color: #F7EFCB;
+}
+/* line 1649, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources .copy .intro-copy {
+  margin-bottom: 50px;
+  text-align: left;
+}
+/* line 1654, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide {
+  position: relative;
+  flex-shrink: 0;
+  padding: 30px;
+  margin-top: 50px;
+  background: #F7EFCB;
+}
+/* line 1660, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide .cover {
+  position: relative;
+  height: 80px;
+  background-color: #ffcd68;
+  background-size: 1267px 400px;
+  background-repeat: no-repeat;
+  background-position: -190px -165px;
+  margin: -30px -30px 25px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+}
+/* line 1674, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide .cover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 100%;
+  left: 0;
+  background-color: #F7EFCB;
+  transform: skewY(-12deg);
+  transform-origin: 0 0;
+}
+/* line 1689, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide .common-BodyText {
+  color: #1F1F1F;
+}
+/* line 1692, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide h2 {
+  margin-bottom: 20px;
+  color: #32325d;
+}
+/* line 1696, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.resources aside.guide .common-Button--default {
+  margin-top: 25px;
+}
+/* line 1701, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network {
+  position: relative;
+  padding: 450px 0 0;
+  background-color: #AFD5BD;
+  margin-top: -410px;
+}
+/* line 1706, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .container-lg {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/* line 1711, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .logos {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+/* line 1717, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .logos .row {
+  will-change: transform;
+  animation: logos 120s linear infinite;
+}
+/* line 1720, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .logos .row > div {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  line-height: 120px;
+}
+/* line 1726, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .logos .row > div:nth-child(odd) {
+  transform: translateY(-50%);
+}
+/* line 1730, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .logos .row > div .network-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.55);
+}
+/* line 1740, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .copy {
+  max-width: 840px;
+}
+/* line 1742, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .copy p + p {
+  margin-top: 20px;
+}
+/* line 1746, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.network .common-Button {
+  margin-top: 25px;
+}
+/* line 1750, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process {
+  position: relative;
+  padding: 300px 0 120px;
+  margin-top: -410px;
+  z-index: 1;
+}
+/* line 1755, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 130px;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-12deg);
+}
+/* line 1766, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .container-lg {
+  position: relative;
+}
+/* line 1769, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 70px;
+}
+/* line 1774, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .line {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 39px;
+  width: 2px;
+  background-color: #fcf7de;
+}
+/* line 1782, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* line 1786, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon-container {
+  display: flex;
+  position: relative;
+  margin-right: 20px;
+}
+/* line 1790, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon-container.documents-bank-account {
+  flex-direction: column;
+}
+/* line 1794, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fcf7de;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+/* line 1803, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon.submit {
+  background-image: url("https://www.stripe.com/img/v3/atlas/timeline_icons/submit.svg");
+}
+/* line 1806, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon.documents {
+  background-image: url("https://www.stripe.com/img/v3/atlas/timeline_icons/documents.svg");
+  z-index: 1;
+  border: 2px solid #fff;
+  border-top-style: none;
+}
+/* line 1812, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon.bank-account {
+  background-image: url("https://www.stripe.com/img/v3/atlas/timeline_icons/bank-account.svg");
+  margin-top: -22px;
+  margin: -22px 0 0;
+}
+/* line 1817, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon.incorporation {
+  background-image: url("https://www.stripe.com/img/v3/atlas/timeline_icons/incorporation.svg");
+}
+/* line 1820, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .icon.tax-id {
+  background-image: url("https://www.stripe.com/img/v3/atlas/timeline_icons/tax-id.svg");
+}
+/* line 1824, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step .day {
+  display: inline-block;
+  height: 24px;
+  padding: 0 10px;
+  margin-top: 5px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #e39f48;
+}
+/* line 1838, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.process .timeline .step + .step {
+  margin-top: 40px;
+}
+/* line 1844, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing {
+  position: relative;
+}
+/* line 1846, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .container-lg {
+  max-width: 1140px;
+}
+/* line 1849, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .common-Card {
+  flex-direction: column;
+  padding: 0;
+  z-index: 1;
+}
+/* line 1853, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .common-Card > * {
+  padding: 30px;
+  flex-basis: 50%;
+}
+/* line 1858, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing h3 {
+  color: #1F1F1F;
+  margin-bottom: 15px;
+}
+/* line 1862, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+/* line 1867, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .core .details {
+  display: flex;
+  flex-direction: column;
+}
+/* line 1871, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .core h1 {
+  font-size: 50px;
+}
+/* line 1874, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .core ul {
+  margin-top: 20px;
+}
+/* line 1878, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing .extras {
+  background-color: #eaf4ee;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 1885, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+section.pricing * + h3 {
+  margin-top: 37px;
+}
+
+@supports (-moz-appearance: none) {
+  /* line 1892, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.features .devices-dashboard .laptop {
+    clip-path: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/laptop-mask.svg#clip");
+  }
+}
+@media (min-width: 420px) {
+  /* line 1898, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources .container-lg {
+    flex-direction: column;
+  }
+}
+@media (min-width: 670px) {
+  /* line 1903, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* line 1907, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .intro-copy {
+    text-align: center;
+  }
+
+  /* line 1910, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .modal-overlay {
+    padding: 50px;
+  }
+
+  /* line 1913, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .join-modal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 1917, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .join-modal > .column {
+    padding: 30px;
+  }
+  /* line 1920, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .join-modal > .request-access {
+    flex-basis: 55%;
+    flex-basis: 100%;
+    padding: 30px;
+    flex-direction: column;
+  }
+  /* line 1926, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .join-modal > .use-invite {
+    flex-basis: 45%;
+  }
+
+  /* line 1933, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.features .devices-dashboard {
+    display: block;
+    transform: none;
+    opacity: 1;
+  }
+  /* line 1939, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.features .columns .right {
+    padding-top: 469px;
+    margin-left: 40px;
+  }
+  /* line 1945, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.testimonials .testimonial {
+    padding: 0 45px;
+  }
+  /* line 1948, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.testimonials .logo {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  /* line 1954, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources .copy {
+    margin-right: 100px;
+  }
+  /* line 1957, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources aside.guide {
+    padding: 40px;
+  }
+  /* line 1959, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources aside.guide .cover {
+    margin: -40px -40px 25px;
+  }
+  /* line 1966, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.pricing .core .details {
+    flex-direction: row;
+  }
+  /* line 1969, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.pricing .core ul {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  /* line 1974, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.pricing .extras {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+  }
+  /* line 1980, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.pricing .common-Card > * {
+    padding: 50px;
+  }
+  /* line 1985, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .user-details .common-Card {
+    display: flex;
+    border-bottom-left-radius: 6px;
+  }
+  /* line 1989, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .user-details .common-Card .nav {
+    display: flex;
+    top: 50%;
+  }
+  /* line 1994, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .user-details .photos {
+    width: 50%;
+    height: auto;
+    min-height: 320px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+  }
+  /* line 2003, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .user-details .descriptions {
+    width: 50%;
+    padding: 50px 50px 45px 20px;
+  }
+  /* line 2006, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .user-details .descriptions:after {
+    display: block;
+  }
+  /* line 2011, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network .copy {
+    text-align: center;
+  }
+  /* line 2014, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 2017, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .line {
+    top: 39px;
+    bottom: auto;
+    left: 80px;
+    right: 80px;
+    width: auto;
+    height: 2px;
+  }
+  /* line 2025, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step {
+    flex-direction: column;
+    max-width: 175px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  /* line 2030, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step .icon-container {
+    margin: 0 auto 15px;
+  }
+  /* line 2032, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step .icon-container.documents-bank-account {
+    flex-direction: row;
+  }
+  /* line 2037, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step .icon.documents {
+    border-top-style: solid;
+    border-left-style: none;
+  }
+  /* line 2041, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step .icon.bank-account {
+    margin: 0 0 0 -22px;
+  }
+  /* line 2045, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step .day {
+    margin-top: 15px;
+  }
+  /* line 2048, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.process .timeline .step + .step {
+    margin-top: 0;
+  }
+
+  /* line 2054, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  .globalFooter .globalFooterCTA .buttons {
+    margin-top: 30px;
+  }
+
+  /* line 2057, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  main header .stripes {
+    top: -130px;
+  }
+}
+@media (min-width: 880px) {
+  /* line 2063, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources {
+    padding-bottom: 180px;
+  }
+  /* line 2065, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources .container-lg {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 2069, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources aside.guide {
+    max-width: 390px;
+    margin-top: 0;
+  }
+  /* line 2074, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.testimonials .logo {
+    margin-right: 120px;
+  }
+  /* line 2077, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network .logos .row > div .network-logo {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  /* line 2081, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.pricing .common-Card {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 2087, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.users .globe canvas {
+    mask-image: linear-gradient(180deg, #000, #000 calc(100% - 40px), transparent 100%);
+  }
+}
+@media (min-width: 1040px) {
+  /* line 2093, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network {
+    padding: 450px 0 100px;
+  }
+  /* line 2095, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network .container-lg {
+    justify-content: flex-end;
+  }
+  /* line 2098, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network .logos {
+    visibility: visible;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 40px;
+    right: calc(50% +160px);
+  }
+  /* line 2107, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.network .copy {
+    text-align: left;
+    max-width: 560px;
+  }
+  /* line 2112, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.features ul.feature-list {
+    margin-left: 45px;
+  }
+  /* line 2115, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources .container-lg {
+    padding-left: calc((100vw - 1040px) / 2 +20px);
+  }
+}
+@media (min-width: 1140px) {
+  /* line 2121, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+  section.resources .container-lg {
+    padding-left: 70px;
+  }
+}
+@keyframes logos {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+/* line 2135, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalNav .colorize {
+  color: #E79A3B;
+}
+/* line 2137, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalNav .colorize.active {
+  color: #fdeebe;
+}
+/* line 2140, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.globalNav .colorize:hover {
+  color: #fdeebe;
+}
+
+/* line 2144, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.productNav .colorize {
+  color: #FFC355;
+}
+/* line 2146, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.productNav .colorize.active {
+  color: #ce7c3a;
+}
+/* line 2149, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.productNav .colorize:hover {
+  color: #ce7c3a;
+}
+
+/* line 2153, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.mask-fallback section.features .devices-dashboard {
+  background: url("https://www.stripe.com/img/v3/atlas/devices-dashboard/fallback.jpg");
+  opacity: 1;
+}
+/* line 2156, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/landing_pages/creators.scss */
+.mask-fallback section.features .devices-dashboard * {
+  display: none;
+  background: none;
+}

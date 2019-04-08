@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns:fb="http://ogp.me/ns/fb#" class="no-js" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+// <![CDATA[
+
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '158917874579150',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+        function fb_login(){
+          FB.login(function(response) {
+              if (response.authResponse) {
+                  top.location.href = '/auth/facebook/callback';
+              } else {
+                  //user hit cancel button
+                  console.log('User cancelled login or did not fully authorize.');
+              }
+          }, {
+              scope: 'public_profile,email,user_friends'
+          });
+        }
+
+// ]]>
+</script>
+<div id="fb-root"></div><script type="text/javascript">
+// <![CDATA[
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+// ]]>
+</script>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="shortcut icon" href="http://localhost:3000/assets/pitchtop-favicon.ico" /><title>PitchTop</title><meta property="description" content="Beautiful, modern products at up to 70% off retail." /><script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" /><meta name="p:domain_verify" content="d10a2f36f49e4ea2ce7f35831c8a3860" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="y8twPupzw18wdTKzpfytpwVRVXJtY1N3TMrViFKDNj3Q3yFC3TQS1CV2e/hC4hiUenxrSf6un7nqpEDi33hPOQ==" /><script type="text/javascript">
+// <![CDATA[
+        $(document).ready(function(){
+          $.ajaxSetup({
+            headers: {
+              'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+            }
+          });
+        });
+
+// ]]>
+</script>
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/application.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/theme.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/core.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/accordion.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/autocomplete.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/button.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/checkboxradio.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/controlgroup.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/datepicker.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/dialog.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/draggable.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/menu.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/progressbar.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/resizable.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/selectable.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/selectmenu.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/sortable.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/slider.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/spinner.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/tabs.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/tooltip.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/base.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui/all.self.css?body=1" />
+<link rel="stylesheet" media="screen" href="http://localhost:3000/assets/jquery-ui.self.css?body=1" /><link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" /><link rel="stylesheet" media="screen" href="http://localhost:3000/assets/theme.self.css?body=1" /><link rel="stylesheet" media="screen" href="http://localhost:3000/assets/react.self.css?body=1" /><script src="http://localhost:3000/assets/html5shiv-printshiv.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/version.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/data.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/disable-selection.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/focusable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/form.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/ie.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/keycode.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/escape-selector.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/labels.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/jquery-1-7.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/plugin.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/safe-active-element.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/safe-blur.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/scroll-parent.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/tabbable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/unique-id.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/core.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effect.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/form-reset-mixin.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/position.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widget.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-blind.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-bounce.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-clip.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-drop.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-explode.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-fade.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-fold.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-highlight.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-size.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-scale.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-puff.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-pulsate.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-shake.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-slide.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/effects/effect-transfer.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/accordion.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/menu.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/autocomplete.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/controlgroup.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/checkboxradio.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/button.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/datepicker.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/mouse.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/draggable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/resizable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/dialog.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/droppable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/progressbar.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/selectable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/selectmenu.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/slider.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/sortable.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/spinner.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/tabs.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui/widgets/tooltip.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery-ui.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery_ujs.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.textchange.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.timepicker.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.datetimepicker.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.tagsinput.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/bootstrap-daterangepicker.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.validate.min.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/additional-methods.min.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.iframe-transport.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.remotipart.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/bootstrap.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/main.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/admin.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/campaigns.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/theme.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/validate.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/event_tracking.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/unsaved_changes.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/moment.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/jquery.timeago.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/ahoy.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/chartkick.self.js?body=1"></script>
+<script src="http://localhost:3000/assets/application.self.js?body=1"></script><script type="text/javascript">
+// <![CDATA[
+         jQuery(document).ready(function() {
+            try {
+              jQuery("abbr.timeago").timeago();   
+              jQuery.timeago.settings.allowFuture = true;
+            } catch(ignore){}
+           
+         });
+
+// ]]>
+</script>
+<style>.async-hide { opacity: 0 !important} 
+</style><script>        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+        {'GTM-5BKW9ZS':true});
+</script><script type="text/javascript">
+// <![CDATA[
+
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-48401963-3', 'auto');
+       ga('require', 'GTM-5BKW9ZS');
+       ga('send', 'pageview'); 
+       var _gaq = _gaq || [];
+
+
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '158917874579150',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+        function fb_login(){
+          FB.login(function(response) {
+              if (response.authResponse) {
+                  top.location.href = '/auth/facebook/callback';
+              } else {
+                  //user hit cancel button
+                  console.log('User cancelled login or did not fully authorize.');
+              }
+          }, {
+              scope: 'public_profile,email,user_friends'
+          });
+        }
+
+// ]]>
+</script>
+<div id="fb-root"></div></head><body id="signup" class=""><div style="float:left;height:5px;width:20%;margin:0;background-color:#f60" class="bg_adrien orange"></div><div style="float:left;height:5px;width:20%;margin:0;background-color:#f7efcb" class="bg_adrien orange"></div><div style="float:left;height:5px;width:20%;margin:0;background-color:#afd5bd" class="bg_adrien orange"></div><div style="float:left;height:5px;width:20%;margin:0;background-color:#56a49f" class="bg_adrien orange"></div><div style="float:left;height:5px;width:20%;margin:0;background-color:#1e1b10" class="bg_adrien orange"></div><div class="container"><div class="row header"><div class="col-md-12"><h3 class="logo"><h3 class="logo"><a href="http://localhost:3000/"><img style="max-width: 100%;" src="http://localhost:3000/assets/logos/pitchtop-logo-multi-seagreen@0.5x.png" alt="Pitchtop logo multi seagreen@0.5x" /></a></h3></h3><h4>Please sign in to continue</h4></div></div><div class="row"><div class="col-md-12"><div class="wrapper clearfix"><div class="formy"><div class="row"><div class="col-md-12"><form class="new_user" id="new_user" action="http://localhost:3000/account/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LY4KsystJKDQhxKmYl/YPC02T2NKojankRx8ezLZdr02mlvPHGr1K8WEW+2FQW0PUhtxWNlv+mk3cukRvyIPuQ==" /><input name="authenticity_token" type="hidden" value="tpVfudZzuyQUrNCwlFqUbru6MjI97lJxRpvMYExSbx6tgQ7F4TRqrwGvmftzRCFdxJcMCa4jnr/g9VkKwakWGg==" /><div class="form-group"><label for="email">Email address</label><input autofocus="autofocus" class="form-control" id="email" type="email" value="" name="user[email]" /></div><div class="form-group"><label for="password">Password</label><input class="form-control" id="password" type="password" name="user[password]" /></div><div class="form-group pull-left"><input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" /><label>&nbsp;Remember me</label></div><input type="submit" class="btn btn-block button button-info" value="Sign In" /><div class="form-group pull-right"><a href="http://localhost:3000/account/password/new">Forgot password?</a></div></form><div class="clearfix" style="margin-bottom: 15px;"></div></div></div></div></div></div><div class="clearfix"></div><div class="already-account">Need an account?&nbsp;&nbsp;<a href="http://localhost:3000/account/sign_up">Sign up here</a></div></div></div><div style="display: none;" id="inspectlet_test_div"></div></body></html>
