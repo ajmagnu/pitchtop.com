@@ -1,0 +1,4357 @@
+@charset "UTF-8";
+/* line 86, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_variables.scss */
+.catalog-home .btn.btn-hero, .catalog-collection .btn.btn-hero, .catalog-home .btn.btn-hero:hover, .catalog-collection .btn.btn-hero:hover, .catalog-home .btn.btn-hero:focus, .catalog-collection .btn.btn-hero:focus {
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f5f5f5;
+  outline: none;
+  margin: 20px auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+/* line 100, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_variables.scss */
+.catalog-home .fade-carousel .slides .slide-n, .catalog-collection .fade-carousel .slides .slide-n {
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Media Queries - Standard */
+/* Media Queries - Edge Cases */
+/* MEDIA QUERIES */
+/* line 1, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  -webkit-backface-visibility: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  background: #282726;
+  width: 100%;
+  line-height: normal;
+}
+/* line 2, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+body #sidebar_toggle, html #sidebar_toggle {
+  height: 0;
+}
+/* line 14, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+body a, html a {
+  cursor: pointer;
+}
+
+/* line 18, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 21, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 24, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 29, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero {
+  height: 100vh;
+  background-color: #25afec;
+  background-size: cover;
+  background-position: right;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 640px) {
+  /* line 29, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero {
+    transition: margin 0.4s ease;
+  }
+}
+/* line 49, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero.scrolled {
+  margin-top: 70px;
+}
+@media screen and (max-width: 640px) {
+  /* line 49, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero.scrolled {
+    margin-top: 60px;
+  }
+}
+/* line 56, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu {
+  left: 0px;
+  top: 0;
+  background: #2a2929;
+  z-index: 1000000;
+  margin-top: 0px;
+  width: 280px;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 66, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .left_navigation_close_container {
+  padding: 13px 12px;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0px 29px 14px 12px;
+  display: inline-block;
+}
+/* line 75, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .left_navigation_close_container .left_navigation_close {
+  color: #fffceb;
+  font-size: 25px;
+}
+/* line 79, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .left_navigation_close_container:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+/* line 83, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .new_logo {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 25px;
+  color: #fffcf2;
+  display: inline-block;
+}
+/* line 92, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items {
+  padding-left: 0px;
+}
+/* line 94, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items .nav_menu_item {
+  list-style: none;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  height: 48px;
+  padding-left: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-top: 13px;
+  color: #fffcf2;
+}
+/* line 107, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items .nav_menu_item i {
+  margin-right: 20px;
+  margin-left: 0px;
+  font-size: 19px;
+}
+/* line 112, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items .nav_menu_item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+/* line 116, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items .nav_menu_item:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+/* line 120, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero #left_navigation_menu .nav_menu_items hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  width: 90%;
+}
+/* line 134, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 11px 15px 0;
+  position: initial;
+  width: 100%;
+  top: 0;
+  z-index: 110;
+  pointer-events: initial;
+  transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@media screen and (min-width: 64em) {
+  /* line 134, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header {
+    position: initial;
+    height: 70px;
+    align-items: flex-end;
+    pointer-events: initial;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 134, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header {
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 11px;
+  }
+}
+/* line 161, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header img.logo {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 10px;
+  left: 71px;
+  padding: 3px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  border: 2px solid #f7efcb;
+  margin-bottom: 15px;
+  margin-right: 115px;
+  transition: all 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@media screen and (min-width: 64em) {
+  /* line 161, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header img.logo {
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    left: 71px;
+  }
+}
+/* line 183, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header #left_navigation_toggle_open {
+  color: #fffceb;
+  font-size: 22px;
+  position: fixed;
+  top: 18px;
+  left: 24px;
+}
+@media screen and (max-width: 1023px) {
+  /* line 197, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header #left_navigation_toggle_open {
+    top: 13px;
+    left: 23px;
+  }
+}
+/* line 211, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Righteous", "Arial Black", sans-serif;
+}
+/* line 220, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me div {
+  float: left;
+}
+/* line 222, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me div.avatar {
+  height: 30px;
+  width: 30px;
+  margin-top: -10px;
+  margin-left: 15px;
+}
+/* line 227, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me div.avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 414px) {
+  /* line 220, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header .me div {
+    font-size: 11px;
+  }
+}
+/* line 236, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me.sign_up {
+  top: 0px;
+}
+/* line 238, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me.sign_up .btn-cta {
+  margin-top: 10px;
+}
+/* line 242, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .caret {
+  margin-left: 14px;
+  margin-top: -5px;
+  border-top: 6px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+/* line 249, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown .dropdown-menu {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+}
+/* line 262, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown.open .dropdown-menu {
+  max-height: 200px;
+  opacity: 1;
+}
+/* line 266, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown-menu {
+  margin-top: 20px;
+  border-radius: 1px;
+  border: 0px;
+  background: #f7f5ea;
+}
+/* line 277, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown-menu li a {
+  color: #1E1B10;
+  font-weight: bold;
+  text-transform: unset;
+}
+/* line 281, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown-menu li a:hover {
+  background: #AFD5BD;
+}
+/* line 286, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .me .dropdown-menu .divider {
+  color: #eae6d6;
+}
+/* line 291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container {
+  position: fixed;
+  top: 9px;
+  left: 119px;
+  width: 50%;
+  /*.algolia-autocomplete .aa-input:focus, .algolia-autocomplete .aa-hint:focus {
+    width: 100%;
+  }*/
+}
+@media screen and (max-width: 640px) {
+  /* line 291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header .search_container {
+    top: 6px;
+    left: 107px;
+  }
+}
+/* line 300, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form {
+  flex: 1;
+  width: 100%;
+}
+@media screen and (min-width: 64em) {
+  /* line 300, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header .search_container form {
+    display: block;
+  }
+}
+/* line 309, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input {
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  width: 50%;
+  padding: 0 30px 0 40px;
+  background: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+/* line 321, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:focus {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  color: #1D1B10;
+}
+/* line 326, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:blur {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  color: #1D1B10;
+}
+/* line 333, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 337, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 341, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 345, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 349, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:focus::-webkit-input-placeholder {
+  color: #757575;
+}
+/* line 352, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:focus::-moz-placeholder {
+  color: #757575;
+}
+/* line 355, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:focus:-ms-input-placeholder {
+  color: #757575;
+}
+/* line 358, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container form input:focus:-moz-placeholder {
+  color: #757575;
+}
+/* line 362, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container i {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  z-index: 100000;
+}
+/* line 371, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container:focus i {
+  color: rgba(29, 27, 16, 0.91);
+}
+/* line 375, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete {
+  width: 100%;
+}
+/* line 378, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-input, #hero header .search_container .algolia-autocomplete .aa-hint {
+  width: 50%;
+  background: #f7efcc;
+}
+/* line 385, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-hint {
+  color: #999;
+}
+/* line 388, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  background-color: #fffefc;
+  border: 0px;
+  border-radius: 0 0 3px 3px;
+  padding: 10px 7px;
+}
+/* line 395, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 8px 9px;
+}
+/* line 399, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #baf4cf;
+}
+/* line 402, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 406, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .media-object {
+  margin-right: 15px;
+  border-radius: 3px;
+}
+/* line 410, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(80, 64, 1, 0.71);
+  color: #777777;
+  font-family: Arial,sans-serif;
+}
+/* line 418, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container .algolia-autocomplete .aa-dropdown-menu .aa-suggestion h4 {
+  font-size: 19px;
+  color: black;
+  margin-top: 2px;
+}
+/* line 423, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container.active {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  z-index: 99999999;
+}
+/* line 431, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container.active input, #hero header .search_container.active .algolia-autocomplete .aa-input, #hero header .search_container.active .algolia-autocomplete .aa-hint {
+  font-size: 28px;
+  height: 80px;
+  padding-left: 90px;
+  width: 100%;
+  background: #f7f5ea;
+  color: #090909;
+}
+/* line 440, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header .search_container.active i {
+  top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+/* line 448, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header.sticky {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.88);
+  padding-top: 18px;
+  padding-top: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  position: fixed;
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.19), 3px 0 3px 0 rgba(0, 0, 0, 0.19), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+}
+/* line 460, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header.sticky img.logo {
+  margin-bottom: 9px;
+  border-top-color: #f7efcb;
+  border-right-color: #afd5bd;
+  border-bottom-color: #56a49f;
+  border-left-color: #ff6600;
+}
+/* line 467, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header.sticky .cta {
+  position: absolute;
+  right: 16px;
+  top: 25px;
+  margin-top: -11px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  display: inline-block;
+}
+@media screen and (min-width: 64em) {
+  /* line 467, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header.sticky .cta {
+    margin-top: -16px;
+  }
+}
+/* line 477, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header.sticky .cta .btn-cta {
+  display: inline-block;
+}
+/* line 480, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero header.sticky .cta .hidden {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  /* line 467, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero header.sticky .cta {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 490, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-image-container {
+    padding: 0;
+  }
+}
+/* line 495, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info {
+  z-index: 100;
+  display: flex;
+  color: #fff;
+}
+/* line 500, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info #catalog_page_title i {
+  font-size: 35px;
+  display: none;
+}
+/* line 509, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+/* line 519, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .video-thumb {
+  position: relative;
+  cursor: pointer;
+  height: 70px;
+  margin-right: 20px;
+}
+/* line 525, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .video-thumb img {
+  height: 100%;
+  border-radius: 2px;
+}
+/* line 530, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .video-thumb:hover .play-overlay {
+  transition: all 0.25s;
+  transform: scale(1.05);
+}
+/* line 535, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .video-thumb .play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: -12px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 550, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .thumb-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 554, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .thumb-buttons button:first-of-type {
+  flex: 0 0 30px;
+  border: none;
+  background: #25afec;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 563, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .thumb-buttons button:last-of-type {
+  flex: 0 0 30px;
+  height: 45px;
+  border-radius: 3px;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.51);
+  color: #fff;
+  font-size: 20px;
+}
+/* line 572, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .thumb-buttons button {
+  cursor: pointer;
+  font-weight: 600;
+}
+/* line 576, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .video-column .thumb-buttons button:hover {
+  transition: all 0.25s;
+  transform: scale(1.05);
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 64em) {
+  /* line 584, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column {
+    position: initial;
+    flex: 0 0 293px;
+    display: block;
+    padding: 0;
+    background: none;
+  }
+  /* line 590, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .video-thumb {
+    margin-bottom: 10px;
+    height: auto;
+    margin-right: 0;
+  }
+  /* line 594, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .video-thumb .play-overlay {
+    left: 50px;
+    right: 50px;
+    font-size: 14px;
+  }
+  /* line 600, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .thumb-buttons {
+    flex-direction: row;
+  }
+  /* line 602, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .thumb-buttons button:first-of-type {
+    flex: 1;
+  }
+  /* line 605, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .thumb-buttons button:last-of-type {
+    flex: 0 0 45px;
+    margin-left: 10px;
+  }
+  /* line 609, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .video-column .thumb-buttons button {
+    cursor: pointer;
+  }
+}
+/* line 616, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column {
+  flex: 1;
+}
+@media screen and (min-width: 64em) {
+  /* line 616, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .info-column {
+    margin-left: 35px;
+  }
+}
+/* line 621, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+@media screen and (max-width: 640px) {
+  /* line 621, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #hero .hero-info .info-column h1 {
+    font-size: 30px;
+  }
+}
+/* line 629, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 15px;
+  position: relative;
+  padding-left: 50px;
+}
+/* line 635, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2:before {
+  content: ' \25CF';
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  color: #25afec;
+  top: -34px;
+}
+/* line 643, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2.profile_page {
+  padding-left: 0px;
+}
+/* line 645, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2.profile_page:before {
+  content: '';
+  display: none;
+}
+/* line 649, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2.profile_page img {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-right: 18px;
+  margin-top: -4px;
+}
+/* line 656, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h2.profile_page span {
+  vertical-align: middle;
+}
+/* line 661, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+/* line 665, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h3 .number {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-weight: normal;
+}
+/* line 668, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h3 .number.agreement_end_date {
+  display: inline-block;
+  width: 157px;
+}
+/* line 673, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h3 a {
+  font-weight: 400;
+  color: #25afec;
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* line 679, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column h3 i {
+  opacity: 0.44;
+}
+/* line 681, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 1;
+  line-height: 1.1;
+  letter-spacing: .3px;
+}
+/* line 689, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-connection-count {
+  width: 46px;
+  float: left;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-align: center;
+  margin-top: 44px;
+  margin-right: 12px;
+  color: #fff;
+}
+/* line 697, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-connection-count .connection-count-value {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 19px;
+}
+/* line 701, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-connection-count .connection-count-label, #hero .hero-info .info-column .catalog-connection-count .connection-count-label .plural {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 708, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-connection-count.equals_one .plural {
+  display: none;
+}
+/* line 713, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-want-btn {
+  cursor: pointer;
+  font-size: 25px;
+  /* float: right; */
+  margin-top: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  /* background: #1cd5ed; */
+  padding: 5px 15px;
+  border-radius: 1px;
+}
+/* line 726, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-want-btn:hover {
+  border: 2px solid rgba(28, 213, 237, 0);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 730, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-want-btn:active {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 735, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-want-btn.wanted {
+  border: 2px solid rgba(255, 255, 255, 0);
+  background: #1cd5ed;
+}
+/* line 739, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .hero-info .info-column .catalog-want-btn.wanted:hover {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+/* line 767, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero:hover .hero-info #catalog_page_title i {
+  display: inline-block;
+}
+/* line 773, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero .bottom-fade {
+  position: absolute;
+  border-bottom: 1px solid #271f08;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, black 75%);
+  background: linear-gradient(to bottom, rgba(5, 4, 1, 0) 0%, #050401 85%);
+}
+
+/* line 785, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.btn-cta {
+  color: #fff;
+  background: none;
+  border: 0px;
+  border-bottom: 2px solid #25afec;
+  float: right;
+  margin: 0 auto;
+  border-radius: 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  padding: 8px 5px 6px;
+  font-weight: 600;
+  margin-top: 45px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+/* line 801, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.btn-cta#header_cta {
+  display: none;
+  float: right;
+  margin-top: 0px;
+}
+/* line 806, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.btn-cta:hover {
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 811, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.btn-cta:visited {
+  color: #fff;
+}
+
+/* line 816, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item {
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.75);
+}
+/* line 822, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item .collection_item_mask_container {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.25s cubic-bezier(0.4, 0, 1, 1);
+  height: 100%;
+  width: 100%;
+  padding: 0 10px 93px 0;
+}
+/* line 830, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item .collection_item_mask_container .collection_item_mask {
+  height: 100%;
+  width: 100%;
+  padding: 40% 0;
+  background: rgba(0, 0, 0, 0.63);
+  border-bottom: 2px solid #f26622;
+}
+/* line 836, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item .collection_item_mask_container .collection_item_mask a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 35%;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f26622;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+/* line 852, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item:hover .collection_item_mask_container {
+  visibility: visible;
+  opacity: 1;
+}
+/* line 857, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item .placeholder_avatar {
+  max-width: 100%;
+  padding: 20px 21.49px;
+}
+
+/* line 863, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 866, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 1) .collection_item {
+  background-color: #f26622;
+}
+/* line 869, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 2) .collection_item {
+  background-color: #afd5bd;
+}
+/* line 873, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 3) .collection_item {
+  background-color: #e8813d;
+}
+/* line 876, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 4) .collection_item {
+  background-color: #56a49f;
+}
+
+/* line 887, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 890, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 1) .collection_item .collection_item_mask_container .collection_item_mask {
+  border-bottom: 2px solid #f26622;
+}
+/* line 892, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 1) .collection_item .collection_item_mask_container .collection_item_mask a {
+  border-bottom: 2px solid #f26622;
+}
+/* line 896, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 2) .collection_item .collection_item_mask_container .collection_item_mask {
+  border-bottom: 2px solid #50e4a2;
+}
+/* line 898, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 2) .collection_item .collection_item_mask_container .collection_item_mask a {
+  border-bottom: 2px solid #50e4a2;
+}
+/* line 903, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 3) .collection_item .collection_item_mask_container .collection_item_mask m {
+  border-bottom: 2px solid #f26622;
+}
+/* line 905, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 3) .collection_item .collection_item_mask_container .collection_item_mask m a {
+  border-bottom: 2px solid #f26622;
+}
+/* line 909, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 4) .collection_item .collection_item_mask_container .collection_item_mask {
+  border-bottom: 2px solid #50e4a2;
+}
+/* line 911, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_container:nth-child(4n + 4) .collection_item .collection_item_mask_container .collection_item_mask a {
+  border-bottom: 2px solid #50e4a2;
+}
+
+@media screen and (max-width: 496px) {
+  /* line 923, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .collection_item_container {
+    width: 100%;
+  }
+}
+/* line 928, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_details {
+  padding: 5px 14px 5px 28px;
+  min-height: 85px;
+  max-height: 85px;
+  background-color: #2e2e2e;
+  color: #fff;
+  margin-top: -2px;
+  text-align: right;
+}
+/* line 936, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_details h4 {
+  font-size: 21px;
+  max-height: 21px;
+  overflow: hidden;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 943, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.collection_item_details p {
+  font-size: 13px;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+/* line 952, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dark .collection_item_container:nth-child(5n + 3) .collection_item {
+  background-color: #f7efcb;
+}
+/* line 956, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dark .collection_item_details {
+  background-color: #2e2e2e;
+}
+
+/* line 961, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.light .collection_item_details {
+  background-color: #000;
+}
+
+/* line 967, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog h1#catalog_page_title {
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: white;
+}
+/* line 973, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .main-content {
+  background: #F3F3F3;
+  border-top: 4px solid #b1d5bb;
+}
+/* line 977, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item {
+  border-radius: 3px;
+  box-shadow: none;
+}
+/* line 980, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item:hover, .thecatalog .collection_item:active {
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.18);
+}
+/* line 983, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item .collection_item_details {
+  color: #23b858;
+  border-radius: 0 0 2px 2px;
+  background-color: #fffef9;
+}
+/* line 987, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item .collection_item_details h4 {
+  font-size: 13px;
+  line-height: 17px;
+  max-height: 34px;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: #fff;
+  color: #272727;
+}
+/* line 996, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item .collection_item_details p {
+  font-family: courier;
+  color: #23b858;
+}
+/* line 1002, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item_mask_container {
+  border-radius: 3px;
+}
+/* line 1004, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .collection_item_mask_container img {
+  border-radius: 2px 2px 0 0;
+}
+/* line 1011, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .nav-tabs.nav-justified {
+  width: 80%;
+  border-bottom: 0;
+  max-width: 340px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  color: #fffef8;
+}
+/* line 1022, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .nav-tabs.nav-justified li.active {
+  border-bottom: 3px solid #97e472;
+}
+/* line 1025, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .nav-tabs.nav-justified li a {
+  background: none;
+  border: 0;
+  color: #fffef8;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+/* line 1031, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.thecatalog .nav-tabs.nav-justified li a:hover, .thecatalog .nav-tabs.nav-justified li a:active, .thecatalog .nav-tabs.nav-justified li a:clicked {
+  border: 0;
+  background: none;
+}
+
+/* line 1041, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.agreement_products_container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+/* line 1044, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.agreement_products_container.featured {
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+/* line 1050, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.btn-ci {
+  border-radius: 0;
+}
+
+/*header {
+	#left_navigation_toggle_open {
+		color: #fffceb;
+	    font-size: 22px;
+	    position:fixed;
+	    top: 18px;
+	    left: 24px;
+	}
+
+	&.sticky {
+		#left_navigation_toggle_open {
+		    margin: 15px 29px 14px 22px;
+		}
+	}
+	@media screen and(max-width: 1023px) {
+		#left_navigation_toggle_open {
+    	    top: 13px;
+		    left: 23px;
+		}
+	}
+	@media screen and(max-width: 640px) {
+
+	}
+	@media screen and(max-width: 539px) {
+
+	}
+	@media screen and(max-width: 374px) {
+
+	}
+}*/
+/* line 1088, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog #hero .hero-info, .catalog-campaign #hero .hero-info, .catalog-campaign-multi #hero .hero-info {
+  max-width: 1200px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 64em) {
+  /* line 1088, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog #hero .hero-info, .catalog-campaign #hero .hero-info, .catalog-campaign-multi #hero .hero-info {
+    padding: 0 115px;
+  }
+}
+
+/* line 1102, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel, .catalog-collection .fade-carousel {
+  position: relative;
+  height: 60vh;
+}
+/* line 1118, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel .carousel-inner .item, .catalog-collection .fade-carousel .carousel-inner .item {
+  height: 60vh;
+}
+/* line 1120, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel .carousel-inner .item .slide-content, .catalog-collection .fade-carousel .carousel-inner .item .slide-content {
+  opacity: 0;
+  transition: 2s all ease-in-out .1s;
+}
+/* line 1125, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel .carousel-inner .item.active .slide-content, .catalog-collection .fade-carousel .carousel-inner .item.active .slide-content {
+  opacity: 1;
+  transition: 2s all ease-in-out .1s;
+}
+/* line 1131, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel .carousel-indicators > li, .catalog-collection .fade-carousel .carousel-indicators > li {
+  margin: 0 2px;
+  background-color: #f26622;
+  border-color: #f26622;
+  opacity: .7;
+}
+/* line 1136, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fade-carousel .carousel-indicators > li.active, .catalog-collection .fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  background-color: #fa5c23;
+  border-color: #fa5c23;
+  opacity: 1;
+}
+/* line 1145, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home #hero, .catalog-collection #hero {
+  height: 60px;
+  padding-bottom: 0;
+  background-image: none;
+  background: #000;
+  justify-content: space-between;
+}
+/* line 1152, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .collection_container, .catalog-collection .collection_container {
+  margin-bottom: 20px;
+}
+/* line 1154, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .collection_container .collection_header, .catalog-collection .collection_container .collection_header {
+  margin-left: 6px;
+  margin-bottom: 20px;
+}
+/* line 1157, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .collection_container .collection_header h3, .catalog-collection .collection_container .collection_header h3 {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 1163, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .collection_container .collection_header h4, .catalog-collection .collection_container .collection_header h4 {
+  font-size: 13px;
+  margin: 0;
+  margin-top: 6px;
+}
+/* line 1168, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .collection_container .collection_header .btn, .catalog-collection .collection_container .collection_header .btn {
+  float: right;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 6px;
+  border-radius: 0;
+  border: 1px;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.53);
+}
+/* line 1180, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .slide-content, .catalog-collection .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+  transform: translate3d(-50%, -50%, 0);
+}
+/* line 1192, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .slide-content h1, .catalog-collection .slide-content h1 {
+  font-size: 10em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  color: #f7f5ea;
+}
+/* line 1202, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .slide-content h3, .catalog-collection .slide-content h3 {
+  text-transform: none;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 43px;
+  color: #f7f5ea;
+}
+/* line 1220, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .btn.btn-lg, .catalog-collection .btn.btn-lg {
+  padding: 14px 40px 10px;
+}
+/* line 1224, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .main-content, .catalog-collection .main-content {
+  padding: 40px 0 80px;
+  background-color: #f7efcb;
+  background-color: #000;
+}
+/* line 1230, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .slider_overlay, .catalog-collection .slider_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #000;
+  opacity: .5;
+}
+@media screen and (min-width: 980px) {
+  /* line 1240, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-home .slide-content, .catalog-collection .slide-content {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 979px) {
+  /* line 1245, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-home .slide-content h1, .catalog-collection .slide-content h1 {
+    font-size: 71px;
+  }
+  /* line 1248, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-home .slide-content h3, .catalog-collection .slide-content h3 {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 1253, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-home .slide-content h1, .catalog-collection .slide-content h1 {
+    font-size: 41px;
+  }
+  /* line 1256, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-home .slide-content h3, .catalog-collection .slide-content h3 {
+    font-size: 26px;
+  }
+}
+/* line 1260, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .rainbow_stripe, .catalog-collection .rainbow_stripe {
+  height: 5px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 1266, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .faded_orange, .catalog-collection .faded_orange {
+  background-color: #e8813d;
+}
+/* line 1269, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .jedi_orange, .catalog-collection .jedi_orange {
+  background-color: #f26622;
+}
+/* line 1272, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .fire_orange, .catalog-collection .fire_orange {
+  background-color: #fa5c23;
+}
+/* line 1275, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .jedi_white, .catalog-collection .jedi_white {
+  background-color: #f7efcb;
+}
+/* line 1278, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .pale_green, .catalog-collection .pale_green {
+  background-color: #afd5bd;
+}
+/* line 1281, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .sea_green, .catalog-collection .sea_green {
+  background-color: #56a49f;
+}
+/* line 1284, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .black, .catalog-collection .black {
+  background-color: #000;
+}
+/* line 1287, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .retro_blue, .catalog-collection .retro_blue {
+  background-color: #40b0d8;
+}
+/* line 1290, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home .retro_green_blue, .catalog-collection .retro_green_blue {
+  background-color: #1cd5ed;
+}
+/* line 1294, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.dark .main-content, .catalog-collection.dark .main-content {
+  background-color: #000;
+}
+/* line 1298, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.dark .collection_container .collection_header, .catalog-collection.dark .collection_container .collection_header {
+  color: #fff;
+}
+/* line 1300, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.dark .collection_container .collection_header h3, .catalog-collection.dark .collection_container .collection_header h3 {
+  font-weight: 600;
+}
+/* line 1303, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.dark .collection_container .collection_header h4, .catalog-collection.dark .collection_container .collection_header h4 {
+  font-weight: 600;
+}
+/* line 1306, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.dark .collection_container .collection_header .btn, .catalog-collection.dark .collection_container .collection_header .btn {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.41);
+}
+/* line 1314, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home.light .main-content, .catalog-collection.light .main-content {
+  background-color: #f7efcb;
+}
+
+/* line 1321, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-home #hero {
+  height: 0px;
+  background: none;
+}
+
+/* line 1328, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection {
+  color: #fff;
+}
+/* line 1329, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero {
+  height: initial;
+  padding: 0 0px 30px;
+}
+/* line 1332, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero header {
+  position: initial;
+  padding: 0;
+}
+/* line 1335, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero header img.logo {
+  margin-right: 0px;
+}
+/* line 1338, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero header h1.subtitle {
+  color: #e8813d;
+  text-transform: uppercase;
+  font-family: 'Righteous';
+  font-size: 19px;
+}
+/* line 1344, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero header.sticky {
+  position: fixed;
+}
+/* line 1351, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection #hero .hero-info .info-column {
+  margin-left: 0px;
+}
+/* line 1357, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column {
+  flex: 1;
+}
+/* line 1359, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+/* line 1364, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 20px;
+  position: relative;
+  padding-left: 50px;
+}
+/* line 1365, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h2 a {
+  color: #fff;
+}
+/* line 1373, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h2:before {
+  content: ' \25CF';
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  color: #b19d3d;
+  top: -45px;
+}
+/* line 1382, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+/* line 1386, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h3 a {
+  font-weight: 400;
+  color: #25afec;
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* line 1392, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column h3 i {
+  opacity: 0.44;
+}
+/* line 1394, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .info-column p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.8;
+  text-align: justify;
+}
+/* line 1402, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-collection .collection_container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 992px) {
+  /* line 1408, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-collection #hero header {
+    padding-left: 0px;
+    padding-top: 4px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 1416, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-collection #hero header {
+    padding-left: 0px;
+    padding-right: 18px;
+  }
+  /* line 1421, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-collection .main-content {
+    padding: 18px 10px 25px;
+  }
+}
+
+/* line 1437, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero {
+  height: initial;
+  background-image: none;
+}
+/* line 1441, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero #catalog-featured-image {
+  text-align: center;
+}
+@media screen and (min-width: 64em) {
+  /* line 1441, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-featured #hero #catalog-featured-image {
+    margin-top: -30px;
+  }
+}
+/* line 1446, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero #catalog-featured-image img {
+  width: 100%;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.26);
+}
+/* line 1451, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero #catalog-featured-image.book img {
+  width: 40%;
+  margin: 30px;
+}
+@media screen and (max-width: 539px) {
+  /* line 1451, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-featured #hero #catalog-featured-image.book img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 1451, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-featured #hero #catalog-featured-image.book img {
+    width: 60%;
+  }
+}
+/* line 1463, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero .hero-info {
+  max-width: none;
+  padding: 0 15px;
+}
+@media screen and (max-width: 640px) {
+  /* line 1463, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-featured #hero .hero-info {
+    padding: 0;
+  }
+}
+/* line 1470, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero .hero-info .info-column {
+  background-color: #000;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.54);
+  color: #fff;
+  margin-left: 0;
+  padding: 40px 40px;
+}
+@media screen and (max-width: 640px) {
+  /* line 1470, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-featured #hero .hero-info .info-column {
+    padding: 40px 20px;
+  }
+}
+/* line 1481, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-featured #hero .bottom-fade {
+  display: none;
+}
+
+/* line 1488, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero {
+  background-image: none;
+  padding-bottom: 40px;
+  transition: margin 0.4s ease;
+}
+/* line 1492, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero header {
+  position: fixed;
+}
+/* line 1494, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero header.sticky {
+  position: fixed;
+}
+/* line 1498, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero .parallax_featured_image_container {
+  display: none;
+}
+/* line 1502, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero .hero-info .info-column {
+  margin-left: 0;
+}
+/* line 1504, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero .hero-info .info-column .btn-cta {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+/* line 1508, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero .hero-info .info-column .catalog-connection-count {
+  margin-top: 26px;
+}
+/* line 1511, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.catalog-product-parallax #hero .hero-info .info-column .catalog-want-btn {
+  margin-top: 27px;
+}
+@media screen and (max-width: 640px), screen and (max-height: 414px) {
+  /* line 1518, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-parallax #hero {
+    background-image: none;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    height: auto;
+  }
+  /* line 1524, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-parallax #hero .parallax_featured_image_container {
+    display: block;
+  }
+  /* line 1526, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .catalog-product-parallax #hero .parallax_featured_image_container .parallax_featured_image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 1537, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content {
+  background: #050401;
+}
+/* line 1540, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container {
+  border-bottom: 1px solid #272727;
+  background: rgba(40, 40, 40, 0.73);
+}
+/* line 1543, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px 115px 90px;
+}
+/* line 1547, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner h3 {
+  margin: 0 0 0px;
+  text-align: center;
+  font-size: 72px;
+  color: #25afec;
+  font-weight: 400;
+}
+/* line 1554, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #25afec;
+  opacity: 0.32;
+  text-align: center;
+  margin: 0;
+}
+/* line 1563, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner .progress-bar-container h4 {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  margin-bottom: 0;
+  color: #fff;
+}
+/* line 1570, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner .progress-bar-container h4 span {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 1576, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner .progress-bar-container .progress-bar {
+  height: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #f6eec8;
+  float: none;
+  width: 100%;
+}
+/* line 1583, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner .progress-bar-container .progress-bar .progress-bar-inner {
+  background: #25afec;
+  height: 20px;
+}
+/* line 1588, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .progress-container .progress-container-inner .progress-bar-container p {
+  font-size: 24px;
+  color: #f6eec8;
+  text-align: center;
+  margin: 30px 0 0;
+  opacity: 1;
+  font-weight: 400;
+}
+/* line 1599, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container {
+  background: #151515;
+  padding: 90px 0 140px;
+  border-bottom: 1px solid #272727;
+}
+/* line 1603, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list {
+  list-style: none;
+  margin: 0;
+}
+/* line 1606, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list li {
+  margin-right: 50px;
+  outline: none;
+}
+/* line 1609, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list li img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/* line 1612, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list li img:nth-child(2) {
+  margin-top: 50px;
+}
+/* line 1616, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list .slick-dots {
+  margin-bottom: -20px;
+  left: 0;
+  right: 0;
+}
+/* line 1620, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list .slick-dots li {
+  background: #fff;
+  border-radius: 20px;
+  opacity: 0.25;
+}
+/* line 1624, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .gallery-container .gallery-list .slick-dots li.slick-active {
+  opacity: 1;
+}
+/* line 1631, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container {
+  background: #1f1f1f;
+  border-bottom: 1px solid #272727;
+  overflow: hidden;
+}
+/* line 1635, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 45px 40px 175px;
+}
+@media screen and (min-width: 64em) {
+  /* line 1635, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .quote-container .quote-container-inner {
+    padding: 45px 115px 175px;
+  }
+}
+/* line 1642, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+/* line 1647, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header h3 {
+  font-size: 15px;
+  color: #f7efc9;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 1653, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header .quote-nav {
+  display: flex;
+  margin-top: 10px;
+}
+/* line 1656, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header .quote-nav button {
+  background: none;
+  border: 1px solid #6c695a;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+/* line 1669, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header .quote-nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 1672, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header .quote-nav button.prev {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1675, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-header .quote-nav button.next {
+  border-radius: 0 3px 3px 0;
+}
+/* line 1681, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 60px;
+}
+/* line 1689, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-list li {
+  flex: 0 0 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  padding: 0 0 30px;
+  transition: margin 0.25s;
+}
+@media screen and (min-width: 64em) {
+  /* line 1689, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .quote-container .quote-container-inner .quote-list li {
+    font-size: 36px;
+  }
+}
+/* line 1702, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .quote-list li .byline {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  color: #fa6a00;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+/* line 1717, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .logo-list {
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 50%;
+  display: flex;
+  float: right;
+  margin-left: -100px;
+  position: relative;
+}
+/* line 1727, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .logo-list:after {
+  bottom: 110%;
+  left: 100px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fa6a00;
+  border-width: 10px;
+  margin-left: -10px;
+}
+/* line 1741, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .quote-container .quote-container-inner .logo-list li {
+  text-align: center;
+  flex: 0 0 200px;
+  width: 200px;
+  margin-right: 20px;
+  transition: margin 0.25s;
+}
+/* line 1751, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content {
+  background: #151515;
+  border-bottom: 0px;
+}
+/* line 1754, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-header-container {
+  width: 100%;
+}
+/* line 1757, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tabs {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 1763, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tabs li {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  background: #1f1f1f;
+  border: 1px solid #353431;
+  margin-top: -45px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+/* line 1780, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tabs li:last-of-type {
+  margin-right: 0;
+}
+/* line 1783, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tabs li:hover {
+  background: #45433e;
+}
+/* line 1786, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tabs li.active {
+  color: #fff;
+  background: #5ca39e;
+  border: 0px;
+}
+/* line 1793, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  justify-content: center;
+}
+/* line 1800, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs li {
+  min-width: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  border-radius: 0px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  transition: background 0.25s;
+  border-bottom: 3px solid transparent;
+}
+/* line 1820, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs li a, .main-content .tab-content .profile-tabs li a:hover, .main-content .tab-content .profile-tabs li a:active {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+}
+/* line 1826, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs li:last-of-type {
+  margin-right: 0;
+}
+/* line 1829, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs li:hover {
+  border-bottom: 3px solid #fff;
+}
+/* line 1833, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .profile-tabs li.active {
+  color: #fff;
+  border: 0px;
+  border-bottom: 3px solid #5ca39e;
+}
+@media screen and (max-width: 414px) {
+  /* line 1800, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .profile-tabs li {
+    margin-right: 20px;
+    height: 30px;
+    min-width: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* line 1846, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .profile-tabs li a {
+    font-size: 11px;
+  }
+}
+/* line 1852, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 45px 40px 80px;
+}
+@media screen and (min-width: 64em) {
+  /* line 1852, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .tab-content-container {
+    padding: 45px 115px 130px;
+  }
+}
+@media screen and (max-width: 764px) {
+  /* line 1852, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .tab-content-container {
+    padding: 25px 20px 80px;
+  }
+  /* line 1862, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .tab-content-container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/* line 1864, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection {
+  text-align: center;
+  min-height: 200px;
+}
+/* line 1867, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection .avatar {
+  overflow: hidden;
+}
+/* line 1869, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection .avatar svg {
+  width: 80%;
+}
+/* line 1872, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection .avatar img {
+  width: 80%;
+  max-height: 198.5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+/* line 1878, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection .avatar img.person {
+  border-radius: 50%;
+}
+/* line 1883, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .connection h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 1888, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+/* line 1893, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content:first-of-type {
+  display: block;
+}
+/* line 1896, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails {
+  max-width: 680px;
+  margin: 0 auto;
+}
+/* line 1897, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails h1 {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+/* line 1901, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails h2, .main-content .tab-content .tab-content-container .content#contentDetails h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 1906, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails h2 {
+  font-weight: 600;
+}
+/* line 1910, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails h4, .main-content .tab-content .tab-content-container .content#contentDetails h5, .main-content .tab-content .tab-content-container .content#contentDetails h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 1915, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+/* line 1919, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails figcaption {
+  font-size: 16px;
+  margin-top: 8px;
+}
+/* line 1924, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+/* line 1927, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p.quotation {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: justify;
+}
+/* line 1934, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p.quotation .qmarks {
+  font-weight: bold;
+}
+/* line 1937, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p.quotation .qattribution {
+  font-weight: 600;
+  font-size: 17px;
+  float: right;
+}
+@media screen and (min-width: 800px) {
+  /* line 1927, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .tab-content .tab-content-container .content#contentDetails p.quotation {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
+/* line 1951, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails ul {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 1955, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails li {
+  font-size: 19px;
+  line-height: 24px;
+  margin-top: 6px;
+}
+/* line 1961, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails img {
+  margin: 15px 0px;
+  width: 100%;
+}
+/* line 1967, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .collection_item img, .main-content .tab-content .tab-content-container .content#contentDetails .collection_item p {
+  margin: 0;
+}
+/* line 1972, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .collection_item_details h4 {
+  margin: 10px 0;
+}
+/* line 1975, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .collection_item_details p {
+  margin: 0;
+}
+/* line 1979, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails ol {
+  color: #bfe5ff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 1984, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .easyzoom {
+  width: 100% !important;
+}
+/* line 1985, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .easyzoom img {
+  margin: 10px auto !important;
+  display: table-cell !important;
+  max-width: 100% !important;
+}
+/* line 1992, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .highlight-grid {
+  text-align: center;
+}
+/* line 1994, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .highlight-grid p {
+  margin: 0 0 10px;
+}
+/* line 1999, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .techspecs p {
+  margin: 0 0 10px;
+}
+/* line 2004, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails a.buy_button_banner {
+  background: #fc9042;
+  color: #fbfbfb;
+  font-weight: 900;
+  border-radius: 2px;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+/* line 2014, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 2022, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails .video-container iframe, .main-content .tab-content .tab-content-container .content#contentDetails .video-container object, .main-content .tab-content .tab-content-container .content#contentDetails .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 2032, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p {
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+/* line 2040, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .tab-content .tab-content-container .content#contentDetails p .lead-text {
+  font-size: 68px;
+  font-weight: bold;
+  float: left;
+  vertical-align: top;
+  padding: 2px 18px 0 0;
+  margin: 0;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-style: italic;
+  line-height: 48px;
+}
+/* line 2056, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules {
+  padding: 65px 0;
+}
+/* line 2059, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* line 2063, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-header {
+  position: relative;
+  text-align: center;
+}
+/* line 2066, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-header div {
+  margin: -45px auto 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  background: #5ca39e;
+}
+/* line 2079, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-header button {
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+  width: 125px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (min-width: 64em) {
+  /* line 2079, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .rules .rules-container .rules-header button {
+    width: 150px;
+  }
+}
+/* line 2099, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-list-container {
+  margin-top: -45px;
+  padding: 50px 40px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 64em) {
+  /* line 2099, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .rules .rules-container .rules-list-container {
+    padding: 50px 75px;
+  }
+}
+/* line 2107, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-list-container .rules-list {
+  font-weight: 500;
+}
+/* line 2109, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-list-container .rules-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+/* line 2113, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .rules .rules-container .rules-list-container .rules-list .answer {
+  font-size: 16px;
+}
+/* line 2122, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .progress-container {
+  border-bottom: 1px solid #272727;
+  background: rgba(40, 40, 40, 0.73);
+}
+/* line 2126, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .gallery-container {
+  background: #151515;
+  border-bottom: 1px solid #272727;
+}
+/* line 2130, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .quote-container {
+  background: #1f1f1f;
+  border-bottom: 1px solid #272727;
+}
+/* line 2134, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .tab-content {
+  background: #151515;
+}
+/* line 2137, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .tab-content .tabs li {
+  background: #1f1f1f;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 2143, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .tab-content .tab-content-container .content {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 2146, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.dark .tab-content .tab-content-container .connection {
+  color: #F7F4E9;
+}
+/* line 2153, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .progress-container {
+  border-bottom: 1px solid #000000;
+  background: rgba(40, 40, 40, 0.73);
+}
+/* line 2157, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .gallery-container {
+  background: #fdfbf4;
+  border-bottom: 1px solid #000000;
+}
+/* line 2161, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container {
+  background: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+/* line 2166, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container .quote-container-inner .quote-list li {
+  color: #000;
+}
+/* line 2168, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container .quote-container-inner .quote-list li .byline {
+  color: #25afec;
+}
+/* line 2174, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container .quote-container-inner .quote-header h3 {
+  color: #25afec;
+}
+/* line 2177, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container .quote-container-inner .quote-header .fa {
+  color: rgba(0, 0, 0, 0.43);
+}
+/* line 2182, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .quote-container .quote-container-inner .quote-header .quote-nav button.prev {
+  border-right: 0px;
+}
+/* line 2190, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content {
+  background: #fdfbf4;
+}
+/* line 2193, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content .tabs li {
+  background: #ffffff;
+  color: #000;
+}
+/* line 2196, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content .tabs li.active {
+  background: #25afec;
+  color: #fff;
+}
+/* line 2203, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content .tab-content-container .content {
+  color: #000;
+}
+/* line 2206, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content .tab-content-container .content#contentDetails p {
+  color: #000;
+}
+/* line 2211, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .tab-content .tab-content-container .connection {
+  color: #1E1B10;
+  font-weight: 600;
+}
+/* line 2221, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content.light .rules .rules-container .rules-list-container .rules-list h3 {
+  color: #000;
+}
+/* line 2229, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-connection-count {
+  position: absolute;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-align: center;
+  width: 46px;
+  top: 16px;
+  margin-left: 80px;
+  color: #fff;
+}
+/* line 2237, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-connection-count .connection-count-value {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 22px;
+}
+/* line 2241, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-connection-count .connection-count-label, .main-content .catalog-connection-count .connection-count-label .plural {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 2248, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-connection-count.equals_one .plural {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  /* line 2229, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count {
+    width: 46px;
+    top: 18px;
+    margin-left: 100px;
+  }
+  /* line 2257, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-value {
+    font-size: 26px;
+  }
+  /* line 2260, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-label, .main-content .catalog-connection-count .connection-count-label .plural {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 855px) {
+  /* line 2229, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count {
+    width: 46px;
+    top: 17px;
+    margin-left: 90px;
+  }
+  /* line 2269, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-value {
+    font-size: 24px;
+  }
+  /* line 2272, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-label, .main-content .catalog-connection-count .connection-count-label .plural {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 719px) {
+  /* line 2229, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count {
+    width: 46px;
+    top: 16px;
+    margin-left: 80px;
+  }
+  /* line 2282, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-value {
+    font-size: 22px;
+  }
+  /* line 2285, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-connection-count .connection-count-label, .main-content .catalog-connection-count .connection-count-label .plural {
+    font-size: 14px;
+  }
+}
+/* line 2291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-want-btn {
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  padding: 5px 15px;
+  position: absolute;
+  margin-top: 45px;
+  margin: 3px;
+  margin-left: 19px;
+  top: 14px;
+  color: #fff;
+  opacity: .8;
+  padding: 0;
+  padding-left: 1px;
+  padding-top: 10px;
+  z-index: 109;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  font-size: 23px;
+}
+@media screen and (max-width: 991px) {
+  /* line 2291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-want-btn {
+    width: 59px;
+    height: 59px;
+    font-size: 30px;
+    padding-top: 13px;
+  }
+}
+@media screen and (max-width: 855px) {
+  /* line 2291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-want-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    padding-top: 12px;
+  }
+}
+@media screen and (max-width: 719px) {
+  /* line 2291, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .main-content .catalog-want-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 23px;
+    padding-top: 10px;
+  }
+}
+/* line 2335, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-want-btn:hover {
+  opacity: .9;
+  border: 2px solid rgba(28, 213, 237, 0);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 2340, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-want-btn:active {
+  opacity: .9;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 2346, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-want-btn.wanted {
+  opacity: 1;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background: #1cd5ed;
+}
+/* line 2351, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.main-content .catalog-want-btn.wanted:hover {
+  border: 2px solid rgba(255, 255, 255, 0.68);
+}
+
+/* line 2361, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.light #hero header.sticky {
+  background: black;
+}
+
+/* line 2369, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 2374, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+}
+/* line 2380, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .question:hover {
+  transition: all 0.25s;
+  transform: scale(1.05);
+}
+/* line 2384, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .question h3 {
+  font-weight: 300;
+  position: relative;
+  font-size: 21px;
+  color: #fff;
+}
+/* line 2389, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .question h3:before {
+  left: -30px;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(250, 106, 0, 0);
+  border-left-color: #fa6a00;
+  border-width: 10px;
+  margin-top: -10px;
+}
+/* line 2404, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .question span {
+  color: #25afec;
+  font-size: 16px;
+}
+/* line 2409, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li .answer {
+  display: none;
+  color: #25afec;
+  font-size: 16px;
+  padding-left: 50px;
+}
+/* line 2417, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li.open .question h3:before {
+  border-color: rgba(250, 106, 0, 0);
+  border-top-color: #fa6a00;
+  border-width: 10px;
+  margin-left: -10px;
+}
+/* line 2424, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.dropdown-list li.open .answer {
+  display: block;
+}
+
+/* line 2432, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.arrow_box {
+  position: relative;
+  background: #fa6a00;
+}
+
+/* line 2436, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.arrow_box:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(250, 106, 0, 0);
+  border-left-color: #fa6a00;
+  border-width: 20px;
+  margin-top: -20px;
+}
+
+/* line 2451, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer {
+  background: #000;
+  color: #f7eec9;
+}
+@media screen and (max-width: 640px) {
+  /* line 2451, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  footer {
+    display: none;
+  }
+}
+/* line 2457, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .upper-border {
+  border-top: 5px solid #ed6a1e;
+  border-bottom: 5px solid #f7eec9;
+  height: 10px;
+}
+/* line 2462, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .bottom-border {
+  border-top: 5px solid #b1d4bb;
+  border-bottom: 5px solid #5ca39e;
+  height: 10px;
+}
+/* line 2467, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 2475, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner h3 {
+  color: #44f7a8;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 auto 20px;
+}
+/* line 2482, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner form {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 50px;
+}
+/* line 2488, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner form input {
+  flex: 0 0 150px;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* line 2495, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner form input::-webkit-input-placeholder, footer .footer-inner form input::-moz-placeholder, footer .footer-inner form input:-ms-input-placeholder, footer .footer-inner form input:-moz-placeholder {
+  color: #5ca39f;
+}
+/* line 2505, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner form button {
+  background: #fa5c23;
+  color: #fff;
+  flex: 0 0 80px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  text-transform: uppercase;
+}
+/* line 2517, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ul {
+  margin: 0 auto 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 64em) {
+  /* line 2517, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  footer .footer-inner ul {
+    flex-direction: row;
+  }
+}
+/* line 2530, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ul li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 64em) {
+  /* line 2530, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  footer .footer-inner ul li {
+    margin-bottom: 0;
+  }
+}
+/* line 2536, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ul li a {
+  color: #f6eec9;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 2544, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ol {
+  margin: 0 auto 30px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  max-width: 240px;
+  justify-content: space-around;
+}
+/* line 2552, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ol li {
+  font-size: 30px;
+}
+/* line 2554, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner ol li a {
+  color: #f6eec9;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 2562, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .footer-inner p {
+  font-size: 15px;
+  color: #f6eec9;
+  margin: 0 auto 20px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+}
+/* line 2569, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+footer .logo {
+  width: 200px;
+  margin-left: -5px;
+}
+
+/* line 2575, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay {
+  background: rgba(29, 27, 16, 0.91);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  opacity: 0;
+  z-index: 100000;
+  transition: opacity 0.25s;
+}
+/* line 2586, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay #videoModal {
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: none;
+}
+/* line 2594, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay #videoModal .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+/* line 2599, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay #videoModal .video-wrapper iframe {
+  border: 10px solid #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 2610, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay #imageModal {
+  position: relative;
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: none;
+}
+/* line 2616, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.overlay #imageModal img {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+/* line 2624, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  border: none;
+  background: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+/* line 2635, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.modal-close:hover {
+  transition: all 0.25s;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 640px) {
+  /* line 2624, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .modal-close {
+    right: 5px;
+    top: 5px;
+  }
+}
+
+/* line 2646, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon {
+  position: absolute;
+  right: 13px;
+  /* top: -3px; */
+  z-index: 1;
+  overflow: hidden;
+  width: 175px;
+  height: 175px;
+  text-align: right;
+  top: -32px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 2659, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .ribbon {
+    top: 0px;
+  }
+}
+/* line 2664, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon span {
+  font-size: 20px;
+  /* padding-top: 3px; */
+  /* font-weight: bold; */
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 300px;
+  display: block;
+  background: #ff6600;
+  /* background: linear-gradient(#2989D8 0%, #2989d8 100%); */
+  box-shadow: 0 3px 10px -5px black;
+  position: absolute;
+  top: 49px;
+  right: -91px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+}
+
+/* line 2687, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon.small {
+  right: 4px;
+  width: 75px;
+  height: 75px;
+  top: -1px;
+}
+
+/* line 2696, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon.small span {
+  font-size: 8px;
+  line-height: 20px;
+  width: 100px;
+  top: 14px;
+  right: -23px;
+  box-shadow: 0 2px 6px -5px black;
+}
+/* line 2704, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon.small.discount span {
+  font-size: 13px;
+}
+/* line 2707, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon.small.collection span {
+  background-color: #1CD89A;
+}
+/* line 2710, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.ribbon.small.giveaway span {
+  font-size: 11px;
+  background-color: #16A6D1;
+}
+
+/* line 2717, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 2000;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #f9f7ed;
+  color: #f6eec9;
+  height: 60px;
+}
+@media screen and (max-width: 640px) {
+  /* line 2717, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection {
+    height: 60px;
+  }
+}
+/* line 2731, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-connection-count {
+  width: 42px;
+  float: left;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  margin-top: 8px;
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 2740, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-connection-count .connection-count-value {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 19px;
+}
+/* line 2744, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-connection-count .connection-count-label, #parent_collection .catalog-connection-count .connection-count-label .plural {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 2751, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-connection-count.equals_one .plural {
+  display: none;
+}
+/* line 2756, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full {
+  cursor: pointer;
+}
+/* line 2758, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.catalog-connection-count {
+  background: #67b4ec;
+  color: #fff;
+  border-radius: 2px;
+  /* padding: 6px 4px 5px 0px; */
+  margin-top: 6px;
+  border: 2px solid #67b4ec;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  height: 40px;
+  margin-top: 6px;
+  padding-top: 15px;
+  padding: 10px 15px;
+  padding-top: 11px;
+  background: #000;
+}
+/* line 2777, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.catalog-connection-count .catalog-want-btn-icon {
+  float: left;
+  background: none;
+  margin: 0;
+  padding: 0;
+  margin-right: -7px;
+  border: 0px;
+  margin-top: -4px;
+  padding-right: 14px;
+  font-size: 22px;
+}
+/* line 2789, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.catalog-connection-count .connection-count-label {
+  /*color: #67b4ec; */
+  font-size: 17px;
+  /* margin: 0; */
+  /* padding: 0; */
+  float: left;
+  font-family: 'Josefin Sans';
+  /* margin-top: 8px; */
+  /* padding-top: 5px; */
+  color: #fff;
+  font-weight: 700;
+  margin-left: 21px;
+}
+/* line 2801, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.catalog-connection-count .connection-count-label .non-acted-verb {
+  display: inherit;
+}
+/* line 2804, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.catalog-connection-count .connection-count-label .acted-verb {
+  display: none;
+}
+/* line 2812, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted .connection-count-label .non-acted-verb {
+  display: none;
+}
+/* line 2815, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted .connection-count-label .acted-verb {
+  display: inherit;
+}
+/* line 2820, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full:hover {
+  border: 2px solid rgba(28, 213, 237, 0);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 2824, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full:active {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  background: rgba(28, 213, 237, 0.52);
+}
+/* line 2829, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted {
+  border: 2px solid rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 2835, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted:hover {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+}
+/* line 2840, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted:hover .connection-count-label {
+  color: white;
+}
+/* line 2844, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted:active {
+  border: 2px solid transparent;
+  color: white;
+  background: black;
+}
+/* line 2848, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection .catalog-want-btn-full.wanted:active .connection-count-label {
+  color: white;
+}
+/* line 2891, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container {
+  height: 4px;
+}
+/* line 2894, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #collection_progress {
+  height: 100%;
+  width: 35%;
+  background-color: #fa5c23;
+  border-radius: 0 2px 2px 0;
+}
+/* line 2900, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker {
+  padding-top: 7px;
+  font-size: 25px;
+  color: #f9f7ed;
+  width: 104px;
+  text-align: left;
+  z-index: 20001;
+  margin-top: -43px;
+}
+/* line 2908, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker span {
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+  margin-left: -33%;
+}
+/* line 2912, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker span.progress_0 {
+  margin-left: 0;
+}
+/* line 2915, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker span.progress_10 {
+  margin-left: -100%;
+}
+/* line 2918, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker span.progress_9 {
+  margin-left: -50%;
+}
+@media screen and (max-width: 640px) {
+  /* line 2922, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_progress_container #progress_marker span.progress_0 {
+    margin-left: 10%;
+  }
+  /* line 2925, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_progress_container #progress_marker span.progress_10 {
+    margin-left: -100%;
+  }
+  /* line 2928, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_progress_container #progress_marker span.progress_9 {
+    margin-left: -70%;
+  }
+}
+/* line 2934, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_progress_container #progress_marker .progress_knob {
+  height: 12px;
+  width: 12px;
+  margin-top: 3px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: #FF6600;
+  position: relative;
+  z-index: 20002;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+/* line 2950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution {
+  height: 100%;
+  color: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 35%;
+  float: left;
+  background: #000;
+}
+@media screen and (max-width: 1199px) {
+  /* line 2950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 959px) {
+  /* line 2950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 719px) {
+  /* line 2950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 2950, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 2973, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #parent_collection_img {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0px;
+  margin-top: 0;
+  border: 0;
+  background-color: #000;
+  float: left;
+}
+/* line 2983, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #parent_collection_text {
+  text-align: left;
+  padding: 15px 25px;
+  float: left;
+}
+/* line 2988, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_title a {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+@media screen and (max-width: 539px) {
+  /* line 2988, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_title a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 2988, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_title a {
+    font-size: 11px;
+  }
+}
+/* line 3003, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_author {
+  font-size: 16px;
+  margin-top: 3px;
+}
+@media screen and (max-width: 539px) {
+  /* line 3003, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_author {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 3003, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #parent_collection_attribution #parent_collection_text #parent_collection_author {
+    font-size: 9px;
+  }
+}
+/* line 3014, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 {
+  float: right;
+  margin-right: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* line 3019, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div {
+  display: inline;
+  padding: 10px 14px 6px;
+  border: 2px solid #f9f7ed;
+  margin: 0px;
+}
+/* line 3024, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div#previous {
+  border-radius: 4px 0 0 4px;
+}
+/* line 3027, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div#next {
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+}
+/* line 3031, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div a {
+  color: #fff;
+}
+/* line 3034, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div.disabled {
+  border: 2px solid rgba(249, 247, 237, 0.34);
+}
+/* line 3036, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div.disabled#previous {
+  border-right: 2px solid #f9f7ed;
+}
+/* line 3039, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #parent_collection_attribution #collection_navigation_1 div.disabled a {
+  color: rgba(255, 255, 255, 0.34);
+}
+/* line 3046, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_controls {
+  float: left;
+  color: #000;
+  height: 100%;
+  width: 30%;
+  font-size: 29px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1199px) {
+  /* line 3046, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_controls {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 959px) {
+  /* line 3046, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_controls {
+    width: 0%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 3046, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_controls {
+    width: 0%;
+    display: none;
+  }
+}
+/* line 3063, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_controls div {
+  display: inline-block;
+  display: none;
+}
+/* line 3066, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_controls div a {
+  color: #8a8888;
+  vertical-align: sub;
+}
+/* line 3070, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_controls div#star {
+  display: inline-block;
+  display: none;
+  margin: 0px 30px;
+  font-size: 40px;
+}
+/* line 3075, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_controls div#star a {
+  color: #000;
+}
+/* line 3082, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta, #parent_collection #collection_cta_mobile {
+  float: left;
+  width: 35%;
+  color: #000;
+  height: 100%;
+}
+@media screen and (max-width: 959px) {
+  /* line 3082, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_cta, #parent_collection #collection_cta_mobile {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 719px) {
+  /* line 3082, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_cta, #parent_collection #collection_cta_mobile {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 3082, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_cta, #parent_collection #collection_cta_mobile {
+    display: none;
+  }
+}
+/* line 3099, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta div, #parent_collection #collection_cta_mobile div {
+  float: right;
+}
+/* line 3101, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta div#cta, #parent_collection #collection_cta_mobile div#cta {
+  float: right;
+  height: 30px;
+  margin-right: 7px;
+  padding-top: 0;
+}
+/* line 3106, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta div#cta #collection_cta_button, #parent_collection #collection_cta_mobile div#cta #collection_cta_button {
+  color: #fff;
+  height: 40px;
+  margin-top: 6px;
+  /* padding-top: 15px; */
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: #000;
+}
+/* line 3116, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta div#share, #parent_collection #collection_cta_mobile div#share {
+  margin-top: 13px;
+  margin-right: 16px;
+}
+@media screen and (max-width: 719px) {
+  /* line 3116, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_cta div#share, #parent_collection #collection_cta_mobile div#share {
+    display: none;
+  }
+}
+/* line 3125, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#parent_collection #collection_cta_mobile {
+  width: 0%;
+}
+@media screen and (max-width: 640px) {
+  /* line 3125, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  #parent_collection #collection_cta_mobile {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: none;
+  }
+}
+
+/* line 3146, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-share {
+  background: #000 !important;
+}
+@media screen and (max-height: 414px) {
+  /* line 3146, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .sumome-share-client-share {
+    display: none !important;
+  }
+}
+
+/* line 3153, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+a[title="SumoMe"], a[title="Sumo"] {
+  display: none !important;
+}
+
+/* line 3157, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+a[title="Email"] {
+  border-radius: 0px 0px 3px 0px;
+}
+
+/* line 3161, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-wrapper div.sumome-share-client.sumome-share-client-small.sumome-share-client-counts .sumome-share-client-count.sumome-share-client-share-share span {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: .2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 3168, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-wrapper div.sumome-share-client.sumome-share-client-small.sumome-share-client-counts .sumome-share-client-count.sumome-share-client-share-share {
+  border-radius: 0px 3px 0px 0px;
+}
+
+/* line 3171, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-wrapper.sumome-share-client-wrapper-right-page.sumome-share-client-small {
+  width: 35px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* line 3175, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-wrapper div.sumome-share-client.sumome-share-client-small.sumome-share-client-counts .sumome-share-client-count.sumome-share-client-share-share span {
+  font-size: 9px;
+}
+
+/* line 3178, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sumome-share-client-wrapper .sumome-share-client-hide {
+  display: none !important;
+}
+
+/* line 3190, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#subscriberModal .fa {
+  color: #F7EFCB;
+}
+
+/* line 3194, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper {
+  color: #f7efcb;
+  padding-top: 40px;
+  text-align: center;
+}
+/* line 3200, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h1 {
+  /*border-bottom: 3px solid $color_flamingo_approx;*/
+  /* width: 310px; */
+  margin: auto;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: #b0f7ca;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 65px;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 640px) {
+  /* line 3211, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .subscriber-wrapper h2 {
+    font-size: 22px;
+  }
+}
+/* line 3215, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h2 .gum_leaf {
+  color: #afd5bd;
+}
+/* line 3218, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h2 .breaker_bay {
+  color: #56a49f;
+}
+/* line 3221, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h2 .champagne {
+  color: #f7efcb;
+}
+/* line 3224, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h2 .jaffa {
+  color: #e8813d;
+}
+/* line 3227, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper h2 .electric_green {
+  color: #44f7a8;
+  font-style: italic;
+}
+/* line 3232, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper .promo_img {
+  margin-top: 20px;
+  max-width: 80%;
+}
+/* line 3236, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper input {
+  background: none;
+  border: 0px;
+  border-bottom: 2px solid #b0f7ca;
+  font-size: 25px;
+  font-weight: 600;
+  color: #b0f7ca;
+  width: 50%;
+  margin: 20px 20px 22px;
+  padding: 7px;
+}
+@media screen and (max-width: 374px) {
+  /* line 3236, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .subscriber-wrapper input {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+/* line 3253, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper ::-webkit-input-placeholder {
+  /* Chrome */
+  font-style: italic;
+  color: rgba(247, 239, 203, 0.72);
+}
+/* line 3259, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper :-ms-input-placeholder {
+  /* IE 10+ */
+  font-style: italic;
+  color: rgba(247, 239, 203, 0.42);
+}
+/* line 3264, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: italic;
+  color: rgba(247, 239, 203, 0.42);
+}
+/* line 3269, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper :-moz-placeholder {
+  /* Firefox 4 - 18 */
+  font-style: italic;
+  color: rgba(247, 239, 203, 0.42);
+}
+/* line 3274, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper button {
+  background: none;
+  border: 2px solid #b0f7ca;
+  font-size: 20px;
+  height: 41px;
+  width: 98px;
+  border-radius: 2px;
+  color: #b0f7ca;
+  font-weight: bold;
+  padding-top: 5px;
+}
+@media screen and (max-width: 374px) {
+  /* line 3274, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .subscriber-wrapper button {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    background: #b0f7ca;
+    color: #fff;
+  }
+}
+/* line 3296, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper .already-account, .subscriber-wrapper .already-account a {
+  font-size: 14px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+/* line 3302, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  color: #afd5bd;
+}
+@media screen and (max-width: 374px) {
+  /* line 3302, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .subscriber-wrapper p {
+    font-size: 14px;
+  }
+}
+/* line 3311, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper .fb_connect {
+  margin-bottom: 20px;
+}
+/* line 3314, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.subscriber-wrapper a {
+  color: #E7813B;
+}
+
+/* line 3320, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.adminEdit textarea {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 3324, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.adminEdit input {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 3328, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.adminEdit button {
+  border: 0px;
+  border-radius: 2px;
+  background: #fa5c23;
+  font-weight: bold;
+  margin: 3px;
+  padding-top: 8px;
+}
+/* line 3335, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.adminEdit button[type="cancel"] {
+  background: none;
+}
+
+/* line 3342, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#hero_cta input {
+  text-transform: uppercase;
+}
+
+/* line 3355, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sidebar.right {
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 270px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* line 3380, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sidebars > .sidebar {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
+  position: fixed;
+  color: #fff;
+  padding: 18px;
+  font-size: 2em;
+  text-align: left;
+  overflow: scroll;
+}
+/* line 3388, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sidebars > .sidebar .btn-default {
+  background: #f26622;
+  border-color: #fa5c23;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+}
+/* line 3396, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sidebars > .sidebar input {
+  color: #000;
+  width: 100%;
+  height: 34px;
+  border: 0px;
+  border-radius: 2px;
+}
+/* line 3403, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.sidebars > .sidebar textarea {
+  width: 100%;
+  height: 200px;
+  border: 0px;
+  border-radius: 2px;
+  color: #000;
+}
+
+/* line 3423, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal .modal-content, #add-prospector-product-modal .modal-content, .retromodal .modal-content {
+  border-radius: 0px;
+  background: #f7f5ea;
+  border: 0;
+}
+/* line 3428, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal .modal-content table td, #add-prospector-product-modal .modal-content table td, .retromodal .modal-content table td {
+  font-size: 16px;
+}
+/* line 3433, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal .modal-header, #add-prospector-product-modal .modal-header, .retromodal .modal-header {
+  background: #afd5bd;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 0;
+}
+/* line 3439, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal .modal-header h4, #add-prospector-product-modal .modal-header h4, .retromodal .modal-header h4 {
+  font-weight: bold;
+}
+/* line 3446, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form, #imageEditModal #create_prospector_product_form, #imageEditModal form, #add-prospector-product-modal #dashboard_media_form, #add-prospector-product-modal #create_prospector_product_form, #add-prospector-product-modal form, .retromodal #dashboard_media_form, .retromodal #create_prospector_product_form, .retromodal form {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* line 3449, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form label, #imageEditModal #create_prospector_product_form label, #imageEditModal form label, #add-prospector-product-modal #dashboard_media_form label, #add-prospector-product-modal #create_prospector_product_form label, #add-prospector-product-modal form label, .retromodal #dashboard_media_form label, .retromodal #create_prospector_product_form label, .retromodal form label {
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 3452, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form .nav-tabs, #imageEditModal #create_prospector_product_form .nav-tabs, #imageEditModal form .nav-tabs, #add-prospector-product-modal #dashboard_media_form .nav-tabs, #add-prospector-product-modal #create_prospector_product_form .nav-tabs, #add-prospector-product-modal form .nav-tabs, .retromodal #dashboard_media_form .nav-tabs, .retromodal #create_prospector_product_form .nav-tabs, .retromodal form .nav-tabs {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.35);
+  font-weight: 600;
+}
+/* line 3457, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form .nav-tabs li a, #imageEditModal #create_prospector_product_form .nav-tabs li a, #imageEditModal form .nav-tabs li a, #add-prospector-product-modal #dashboard_media_form .nav-tabs li a, #add-prospector-product-modal #create_prospector_product_form .nav-tabs li a, #add-prospector-product-modal form .nav-tabs li a, .retromodal #dashboard_media_form .nav-tabs li a, .retromodal #create_prospector_product_form .nav-tabs li a, .retromodal form .nav-tabs li a {
+  color: #f26622;
+}
+/* line 3460, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form .nav-tabs li.active, #imageEditModal #create_prospector_product_form .nav-tabs li.active, #imageEditModal form .nav-tabs li.active, #add-prospector-product-modal #dashboard_media_form .nav-tabs li.active, #add-prospector-product-modal #create_prospector_product_form .nav-tabs li.active, #add-prospector-product-modal form .nav-tabs li.active, .retromodal #dashboard_media_form .nav-tabs li.active, .retromodal #create_prospector_product_form .nav-tabs li.active, .retromodal form .nav-tabs li.active {
+  border-bottom: 0;
+}
+/* line 3462, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form .nav-tabs li.active a, #imageEditModal #create_prospector_product_form .nav-tabs li.active a, #imageEditModal form .nav-tabs li.active a, #add-prospector-product-modal #dashboard_media_form .nav-tabs li.active a, #add-prospector-product-modal #create_prospector_product_form .nav-tabs li.active a, #add-prospector-product-modal form .nav-tabs li.active a, .retromodal #dashboard_media_form .nav-tabs li.active a, .retromodal #create_prospector_product_form .nav-tabs li.active a, .retromodal form .nav-tabs li.active a {
+  background: #f7f5ea;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 0;
+  color: #000;
+}
+/* line 3473, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form .tab-content, #imageEditModal #create_prospector_product_form .tab-content, #imageEditModal form .tab-content, #add-prospector-product-modal #dashboard_media_form .tab-content, #add-prospector-product-modal #create_prospector_product_form .tab-content, #add-prospector-product-modal form .tab-content, .retromodal #dashboard_media_form .tab-content, .retromodal #create_prospector_product_form .tab-content, .retromodal form .tab-content {
+  padding: 20px 20px 0px;
+}
+/* line 3496, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form button, #imageEditModal #create_prospector_product_form button, #imageEditModal form button, #add-prospector-product-modal #dashboard_media_form button, #add-prospector-product-modal #create_prospector_product_form button, #add-prospector-product-modal form button, .retromodal #dashboard_media_form button, .retromodal #create_prospector_product_form button, .retromodal form button {
+  background: #f26622;
+  color: #fff;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 2px;
+}
+/* line 3503, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal #dashboard_media_form button span, #imageEditModal #create_prospector_product_form button span, #imageEditModal form button span, #add-prospector-product-modal #dashboard_media_form button span, #add-prospector-product-modal #create_prospector_product_form button span, #add-prospector-product-modal form button span, .retromodal #dashboard_media_form button span, .retromodal #create_prospector_product_form button span, .retromodal form button span {
+  font-weight: 500;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+/* line 3510, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+#imageEditModal .modal-footer, #add-prospector-product-modal .modal-footer, .retromodal .modal-footer {
+  color: #fff;
+  background: #000;
+}
+
+/* line 3518, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero, .tag_page #hero, .algolia_search_page #hero {
+  justify-content: flex-start;
+  padding-top: 30%;
+  padding-top: 35vh;
+  height: 85vh;
+}
+/* line 3524, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero.no-bg-img, .tag_page #hero.no-bg-img, .algolia_search_page #hero.no-bg-img {
+  padding-top: 15vh;
+  height: 70vh;
+}
+/* line 3533, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .bottom-fade, .tag_page #hero .bottom-fade, .algolia_search_page #hero .bottom-fade {
+  border: 0;
+}
+/* line 3536, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero header, .tag_page #hero header, .algolia_search_page #hero header {
+  position: fixed;
+}
+/* line 3539, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info, .tag_page #hero .hero-info, .algolia_search_page #hero .hero-info {
+  text-align: center;
+}
+/* line 3541, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info #catalog_page_title, .tag_page #hero .hero-info #catalog_page_title, .algolia_search_page #hero .hero-info #catalog_page_title {
+  text-transform: uppercase;
+}
+/* line 3544, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info #profile_page_short_description, .tag_page #hero .hero-info #profile_page_short_description, .algolia_search_page #hero .hero-info #profile_page_short_description {
+  font-size: 28px;
+  padding: 0 10%;
+  max-width: 1200px;
+  min-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
+}
+/* line 3553, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column, .tag_page #hero .hero-info .info-column, .algolia_search_page #hero .hero-info .info-column {
+  margin-left: 0;
+}
+/* line 3555, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #avatar, .tag_page #hero .hero-info .info-column #avatar, .algolia_search_page #hero .hero-info .info-column #avatar {
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 76px;
+  overflow: hidden;
+}
+/* line 3562, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #avatar img, .tag_page #hero .hero-info .info-column #avatar img, .algolia_search_page #hero .hero-info .info-column #avatar img {
+  width: 70px;
+  border-radius: 3px;
+  border: 0px solid #1cd5ed;
+}
+/* line 3566, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #avatar img.person, .tag_page #hero .hero-info .info-column #avatar img.person, .algolia_search_page #hero .hero-info .info-column #avatar img.person {
+  border-radius: 50%;
+}
+/* line 3572, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column h2, .tag_page #hero .hero-info .info-column h2, .algolia_search_page #hero .hero-info .info-column h2 {
+  margin: 0;
+  padding-left: 0;
+}
+/* line 3576, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column h2#avatar img, .tag_page #hero .hero-info .info-column h2#avatar img, .algolia_search_page #hero .hero-info .info-column h2#avatar img {
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+}
+/* line 3581, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column h2#avatar:before, .tag_page #hero .hero-info .info-column h2#avatar:before, .algolia_search_page #hero .hero-info .info-column h2#avatar:before {
+  left: inherit;
+  top: -64px;
+}
+/* line 3587, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #profile_tags, .tag_page #hero .hero-info .info-column #profile_tags, .algolia_search_page #hero .hero-info .info-column #profile_tags {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 3596, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #profile_tags .profile_location, .tag_page #hero .hero-info .info-column #profile_tags .profile_location, .algolia_search_page #hero .hero-info .info-column #profile_tags .profile_location {
+  padding-left: 55px;
+}
+/* line 3598, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #profile_tags .profile_location i, .tag_page #hero .hero-info .info-column #profile_tags .profile_location i, .algolia_search_page #hero .hero-info .info-column #profile_tags .profile_location i {
+  color: #fff;
+  margin-right: 8px;
+  opacity: .9;
+}
+/* line 3606, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section, .tag_page #hero .hero-info .info-column #follower_section, .algolia_search_page #hero .hero-info .info-column #follower_section {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+/* line 3609, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .follower_count_container, .tag_page #hero .hero-info .info-column #follower_section .follower_count_container, .algolia_search_page #hero .hero-info .info-column #follower_section .follower_count_container {
+  display: inline-block;
+  margin-right: 21px;
+  font-family: 'Righteous';
+  line-height: 12px;
+  margin-top: 0px;
+}
+/* line 3615, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .follower_count_container .follower_count, .tag_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_count, .algolia_search_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_count {
+  font-family: 'Righteous';
+  line-height: 36px;
+  font-size: 30px;
+}
+/* line 3620, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .follower_count_container .follower_text, .profile #hero .hero-info .info-column #follower_section .follower_count_container .follower_text .plural, .tag_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_text, .tag_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_text .plural, .algolia_search_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_text, .algolia_search_page #hero .hero-info .info-column #follower_section .follower_count_container .follower_text .plural {
+  font-family: 'Righteous';
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 14px;
+}
+/* line 3632, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .follower_count_container.equals_one .plural, .tag_page #hero .hero-info .info-column #follower_section .follower_count_container.equals_one .plural, .algolia_search_page #hero .hero-info .info-column #follower_section .follower_count_container.equals_one .plural {
+  display: none;
+}
+/* line 3637, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .btn-cta, .tag_page #hero .hero-info .info-column #follower_section .btn-cta, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta {
+  float: none;
+  background: #1cd5ed;
+  border-radius: 1px;
+  color: #fff;
+  width: 124px;
+  height: 42px;
+  padding-top: 12px;
+  display: inline-block;
+  margin-top: -36px;
+}
+/* line 3649, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .btn-cta:active, .profile #hero .hero-info .info-column #follower_section .btn-cta:hover, .profile #hero .hero-info .info-column #follower_section .btn-cta:visited, .tag_page #hero .hero-info .info-column #follower_section .btn-cta:active, .tag_page #hero .hero-info .info-column #follower_section .btn-cta:hover, .tag_page #hero .hero-info .info-column #follower_section .btn-cta:visited, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta:active, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta:hover, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta:visited {
+  color: #fff;
+}
+/* line 3655, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .btn-cta.following, .tag_page #hero .hero-info .info-column #follower_section .btn-cta.following, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta.following {
+  background: rgba(255, 255, 255, 0.21);
+  color: #fff;
+}
+/* line 3658, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #hero .hero-info .info-column #follower_section .btn-cta.following:hover, .tag_page #hero .hero-info .info-column #follower_section .btn-cta.following:hover, .algolia_search_page #hero .hero-info .info-column #follower_section .btn-cta.following:hover {
+  background: rgba(255, 255, 255, 0.36);
+}
+/* line 3671, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .tab-content-container .connections, .tag_page .tab-content-container .connections, .algolia_search_page .tab-content-container .connections {
+  text-align: center;
+  color: #fff;
+}
+/* line 3674, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .tab-content-container .connections .collection_item .collection_item_mask_container .collection_item_mask a, .tag_page .tab-content-container .connections .collection_item .collection_item_mask_container .collection_item_mask a, .algolia_search_page .tab-content-container .connections .collection_item .collection_item_mask_container .collection_item_mask a {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 3679, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .tab-content-container .btn-cta, .tag_page .tab-content-container .btn-cta, .algolia_search_page .tab-content-container .btn-cta {
+  background: rgba(249, 62, 15, 0.6);
+  float: none;
+  padding: 8px 30px 7px;
+  border-radius: 2px;
+  border: 0;
+}
+/* line 3686, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .tab-content-container .btn-cta .btn-load-more:hover, .tag_page .tab-content-container .btn-cta .btn-load-more:hover, .algolia_search_page .tab-content-container .btn-cta .btn-load-more:hover {
+  background: #f93e0f;
+}
+/* line 3691, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .tab-content-container .btn:hover, .profile .tab-content-container .btn:active, .profile .tab-content-container .btn:visited, .profile .tab-content-container .btn:focus, .tag_page .tab-content-container .btn:hover, .tag_page .tab-content-container .btn:active, .tag_page .tab-content-container .btn:visited, .tag_page .tab-content-container .btn:focus, .algolia_search_page .tab-content-container .btn:hover, .algolia_search_page .tab-content-container .btn:active, .algolia_search_page .tab-content-container .btn:visited, .algolia_search_page .tab-content-container .btn:focus {
+  color: #fff;
+}
+@media screen and (max-width: 979px) {
+  /* line 3696, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero, .tag_page #hero, .algolia_search_page #hero {
+    height: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 3701, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info .info-column h1, .tag_page #hero .hero-info .info-column h1, .algolia_search_page #hero .hero-info .info-column h1 {
+    font-size: 40px;
+  }
+  /* line 3704, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info #profile_page_short_description, .tag_page #hero .hero-info #profile_page_short_description, .algolia_search_page #hero .hero-info #profile_page_short_description {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 539px) {
+  /* line 3711, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info .info-column h1, .tag_page #hero .hero-info .info-column h1, .algolia_search_page #hero .hero-info .info-column h1 {
+    font-size: 30px;
+  }
+  /* line 3714, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info .info-column #profile_tags, .tag_page #hero .hero-info .info-column #profile_tags, .algolia_search_page #hero .hero-info .info-column #profile_tags {
+    font-size: 13px;
+    max-width: 374px;
+  }
+  /* line 3718, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info #profile_page_short_description, .tag_page #hero .hero-info #profile_page_short_description, .algolia_search_page #hero .hero-info #profile_page_short_description {
+    min-width: 370px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 374px) {
+  /* line 3724, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero, .tag_page #hero, .algolia_search_page #hero {
+    padding-bottom: 20px;
+  }
+  /* line 3727, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info, .tag_page #hero .hero-info, .algolia_search_page #hero .hero-info {
+    display: inline-block;
+  }
+  /* line 3730, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info .info-column h1, .tag_page #hero .hero-info .info-column h1, .algolia_search_page #hero .hero-info .info-column h1 {
+    font-size: 30px;
+  }
+  /* line 3733, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info .info-column #profile_tags, .tag_page #hero .hero-info .info-column #profile_tags, .algolia_search_page #hero .hero-info .info-column #profile_tags {
+    font-size: 11px;
+    max-width: 340px;
+  }
+  /* line 3737, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .profile #hero .hero-info #profile_page_short_description, .tag_page #hero .hero-info #profile_page_short_description, .algolia_search_page #hero .hero-info #profile_page_short_description {
+    min-width: 80%;
+    font-size: 16px;
+  }
+}
+/* line 3744, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .al_search_container .ais-search-box, .tag_page .al_search_container .ais-search-box, .algolia_search_page .al_search_container .ais-search-box {
+  max-width: 630px;
+}
+/* line 3746, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile .al_search_container .ais-search-box input, .tag_page .al_search_container .ais-search-box input, .algolia_search_page .al_search_container .ais-search-box input {
+  width: 100%;
+  max-width: 630px;
+  color: #1D1B10;
+  font-family: 'Courier', 'Courier New', 'Times New Roman', serif;
+  font-size: 18px;
+  padding-left: 50px;
+  border-bottom: 3px solid #49d545;
+}
+/* line 3757, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #al_search_results, .tag_page #al_search_results, .algolia_search_page #al_search_results {
+  width: 100%;
+  min-height: 600px;
+}
+/* line 3760, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.profile #al_search_results article.hit, .tag_page #al_search_results article.hit, .algolia_search_page #al_search_results article.hit {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 3768, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.tag_page #hero {
+  padding-top: 30%;
+  padding-top: 12vh;
+  height: 36vh;
+}
+/* line 3773, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.tag_page .main-content {
+  padding-bottom: 100px;
+}
+
+/* line 3779, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.algolia_search_page #hero {
+  padding-top: 0;
+  height: 50vh;
+}
+/* line 3782, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.algolia_search_page #hero .hero-info {
+  margin-top: 12vh;
+}
+/* line 3788, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.algolia_search_page .main-content {
+  padding-bottom: 100px;
+}
+/* line 3790, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+.algolia_search_page .main-content .hero-info {
+  margin-top: -50px;
+}
+@media screen and (max-width: 640px) {
+  /* line 3795, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .algolia_search_page #hero {
+    padding-top: 0;
+    height: 60vh;
+  }
+  /* line 3800, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/_base.scss */
+  .algolia_search_page .main-content .hero-info {
+    margin-top: 40px;
+  }
+}
+
+/* Slider */
+/* line 3, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 17, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 28, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 33, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 42, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 48, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 54, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 58, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 62, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 66, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 69, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 72, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 78, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 82, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 86, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 90, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 96, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* line 45, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url(/assets/ajax-loader.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url(/fonts/slick.eot);
+  src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), url(/fonts/slick.woff) format("woff"), url(/fonts/slick.ttf) format("truetype"), url(/fonts/slick.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+/* line 63, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 81, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 85, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 89, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+/* line 92, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 103, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 105, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+/* line 109, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+/* line 111, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 117, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 119, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+/* line 123, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+/* line 125, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 133, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 137, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+/* line 146, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 154, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  font-size: 16px;
+  color: #2a2a26;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 167, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 169, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 173, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 190, /Users/ae/Workspace/old_pitchtop/pitchtop/app/assets/stylesheets/community/campaign_page/lib/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
